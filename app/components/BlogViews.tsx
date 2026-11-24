@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CalendarDays, ChevronLeft, ChevronRight, Clock, PenLine } from 'lucide-react';
 import type { PostCard } from '@/lib/content';
 import type { Locale, Post, Profile } from '@/lib/types';
-import { asset, pick, whatsappLink } from '@/lib/site';
+import { asset, pick, tagText, whatsappLink } from '@/lib/site';
 import { Prose, readingMinutes } from './Prose';
-import { Shell, useLocale, WhatsAppIcon } from './Shell';
+import { Shell, useEnglishTitle, useLocale, WhatsAppIcon } from './Shell';
 
 /** «٢٤ نوفمبر ٢٠٢٦» — the same on the server and in the browser, whatever the reader's time zone. */
 export const dayText = (date: string, locale: Locale): string => {
@@ -46,7 +46,7 @@ export function PostCardLink({ post }: { post: PostCard }) {
           </span>
           {(post.tags ?? []).slice(0, 2).map((tag) => (
             <span key={tag} className="rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-white/60">
-              {tag}
+              {tagText(tag, locale)}
             </span>
           ))}
         </div>
@@ -72,6 +72,7 @@ export function BlogIndex({ profile, posts }: { profile: Profile; posts: PostCar
 
 function IndexBody({ posts }: { posts: PostCard[] }) {
   const { locale } = useLocale();
+  useEnglishTitle('Blog');
   const isAr = locale === 'ar';
   const Chevron = isAr ? ChevronLeft : ChevronRight;
 
@@ -123,6 +124,7 @@ function PostBody({ profile, post, more }: { profile: Profile; post: Post; more:
   const isAr = locale === 'ar';
   const Chevron = isAr ? ChevronLeft : ChevronRight;
   const title = pick(post.title, locale);
+  useEnglishTitle(pick(post.title, 'en'));
   const body = pick(post.body, locale);
   const minutes = readingMinutes(body);
   const ask = whatsappLink(profile.whatsapp, isAr ? `مرحباً، قرأت مقال «${pick(post.title, 'ar')}» وعندي سؤال` : `Hello, I read "${title}" and I have a question`);

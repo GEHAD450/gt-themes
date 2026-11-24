@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { ThemeCard } from '@/lib/content';
 import type { Platform, Profile } from '@/lib/types';
 import { pick, PLATFORMS } from '@/lib/site';
-import { Shell, useLocale } from './Shell';
+import { Shell, useEnglishTitle, useLocale } from './Shell';
 import { ThemeCardLink } from './ThemeCardLink';
 
 /** A platform's page: its themes, each a door to its guide. */
@@ -21,6 +21,7 @@ function Body({ platform, themes }: { platform: Platform; themes: ThemeCard[] })
   const { locale } = useLocale();
   const isAr = locale === 'ar';
   const info = PLATFORMS[platform];
+  useEnglishTitle(`${pick(info.name, 'en')} themes`);
   const Chevron = isAr ? ChevronLeft : ChevronRight;
 
   return (

@@ -80,7 +80,8 @@ export interface DocSection {
   markers?: Marker[];
   text?: Text;
   steps?: { ar: string[]; en?: string[] };
-  settings?: { label: string; note?: Text }[];
+  /** `label`: the option's name as the Arabic editor shows it; `label_en`: its name in English. */
+  settings?: { label: string; label_en?: string; note?: Text }[];
   tip?: Text;
 }
 

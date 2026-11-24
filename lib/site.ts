@@ -33,6 +33,29 @@ export function ltrSizesIn<T>(value: T): T {
   return value;
 }
 
+/** The usual tags of the blog, in English. */
+const TAGS_EN: Record<string, string> = {
+  'سلة': 'Salla',
+  'زد': 'Zid',
+  'أمازون': 'Amazon',
+  'الصور': 'Pictures',
+  'الفيديو': 'Video',
+  'السرعة': 'Speed',
+  'اختيار الثيم': 'Choosing a theme',
+  'تجهيز المتجر': 'Store setup',
+  'الثيمات': 'Themes',
+  'نصائح': 'Tips',
+};
+
+/**
+ * A tag in the reader's language. A tag is written in Arabic; its English can follow a bar
+ * («الدفع | Payments»), and the usual tags are known without it.
+ */
+export function tagText(tag: string, locale: Locale): string {
+  const [ar, en] = tag.split('|').map((part) => part.trim());
+  return locale === 'en' ? en || TAGS_EN[ar] || ar : ar;
+}
+
 /** The text in the reader's language, Arabic when there is no translation. */
 export const pick = (text: Text | undefined | null, locale: Locale): string =>
   !text ? '' : (locale === 'en' ? text.en : text.ar) || text.ar || text.en || '';

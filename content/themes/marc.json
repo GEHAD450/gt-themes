@@ -130,6 +130,7 @@
           "settings": [
             {
               "label": "اختر الاستايل",
+              "label_en": "Choose a style",
               "note": {
                 "ar": "ماركو — إديتوريال كريمي: للعبايات والأزياء النسائية · فولت — ستريت داكن: للستريت وير والسنيكرز · واحة — أخضر وذهبي: للعطور والعود والبخور",
                 "en": "Marco — creamy editorial: abayas and women's fashion · Vault — dark street: streetwear and sneakers · Oasis — emerald and gold: perfume, oud and incense"
@@ -169,6 +170,7 @@
           "settings": [
             {
               "label": "الشعار (عربي — سطح المكتب)",
+              "label_en": "Logo (Arabic — desktop)",
               "note": {
                 "ar": "صورة أفقية، مقترح 200 × 80.",
                 "en": "A landscape picture, about 200 × 80."
@@ -176,6 +178,7 @@
             },
             {
               "label": "الشعار (عربي — جوال)",
+              "label_en": "Logo (Arabic — phone)",
               "note": {
                 "ar": "صورة أفقية أصغر، مقترح 150 × 60.",
                 "en": "A smaller landscape picture, about 150 × 60."
@@ -183,6 +186,7 @@
             },
             {
               "label": "الشعار (إنجليزي — سطح المكتب)",
+              "label_en": "Logo (English — desktop)",
               "note": {
                 "ar": "يظهر عندما يختار الزائر اللغة الإنجليزية.",
                 "en": "Shown when a shopper switches to English."
@@ -190,6 +194,7 @@
             },
             {
               "label": "الشعار (إنجليزي — جوال)",
+              "label_en": "Logo (English — phone)",
               "note": {
                 "ar": "نسخة الجوال من الشعار الإنجليزي.",
                 "en": "The phone version of the English logo."
@@ -197,6 +202,7 @@
             },
             {
               "label": "موضع الشعار",
+              "label_en": "Logo position",
               "note": {
                 "ar": "البداية أو الوسط أو النهاية.",
                 "en": "Start, centre or end."
@@ -204,6 +210,7 @@
             },
             {
               "label": "أقصى ارتفاع للشعار (سطح المكتب)",
+              "label_en": "Maximum logo height (desktop)",
               "note": {
                 "ar": "يحدّد حجم الشعار في الهيدر.",
                 "en": "Sets how tall the logo can be in the header."
@@ -243,6 +250,7 @@
           "settings": [
             {
               "label": "استخدم ألواني الخاصة (تتجاوز الاستايل)",
+              "label_en": "Use my own colours (override the style)",
               "note": {
                 "ar": "يفعّل «لون الخلفية» و«لون النص» و«لون التمييز» و«النص فوق لون التمييز» و«الخلفية المعاكسة (أشرطة داكنة)» و«النص على الخلفية المعاكسة».",
                 "en": "Turns on background, text, accent, text on accent, inverse background (dark bands) and text on the inverse background."
@@ -250,6 +258,7 @@
             },
             {
               "label": "خلفية الزر",
+              "label_en": "Button background",
               "note": {
                 "ar": "مع «نص الزر»؛ يعملان عند تفعيل ألوانك الخاصة.",
                 "en": "With the button text colour; both apply when your own colours are on."
@@ -257,6 +266,7 @@
             },
             {
               "label": "تأثير المرور على الزر",
+              "label_en": "Button hover effect",
               "note": {
                 "ar": "لمعة أو بدون.",
                 "en": "Shine or none."
@@ -264,6 +274,7 @@
             },
             {
               "label": "استخدم خطوطي وأشكالي الخاصة (تتجاوز الاستايل)",
+              "label_en": "Use my own fonts and shapes (override the style)",
               "note": {
                 "ar": "يفعّل اختيار الخطوط والأشكال التالية.",
                 "en": "Turns on the font and shape choices below."
@@ -271,6 +282,7 @@
             },
             {
               "label": "خط العناوين (عربي)",
+              "label_en": "Heading font (Arabic)",
               "note": {
                 "ar": "أميري، القاهرة، ريم كوفي، المراعي. ومثله «خط النص (عربي)».",
                 "en": "Amiri, Cairo, Reem Kufi, Almarai. The same choice exists for body text."
@@ -278,6 +290,7 @@
             },
             {
               "label": "خط العناوين (لاتيني)",
+              "label_en": "Heading font (Latin)",
               "note": {
                 "ar": "للنصوص الإنجليزية، ومثله «خط النص (لاتيني)».",
                 "en": "For English text; there is a matching Latin body font."
@@ -285,6 +298,7 @@
             },
             {
               "label": "نمط العناوين",
+              "label_en": "Heading style",
               "note": {
                 "ar": "تحريري، عريض، بسيط، أو واحة (عربي فخم).",
                 "en": "Editorial, bold, minimal, or Oasis (refined Arabic)."
@@ -292,6 +306,7 @@
             },
             {
               "label": "نقش الخلفية",
+              "label_en": "Background pattern",
               "note": {
                 "ar": "بدون أو أرابيسك.",
                 "en": "None or arabesque."
@@ -299,6 +314,7 @@
             },
             {
               "label": "نمط الأقواس",
+              "label_en": "Arch style",
               "note": {
                 "ar": "دائري أو مدبّب.",
                 "en": "Rounded or pointed."
@@ -306,6 +322,7 @@
             },
             {
               "label": "عرض الصفحة",
+              "label_en": "Page width",
               "note": {
                 "ar": "مع «استدارة الزوايا» في مجموعة التخطيط.",
                 "en": "With the corner radius, in the layout group."
@@ -313,6 +330,7 @@
             },
             {
               "label": "تفعيل حركات الظهور",
+              "label_en": "Enable reveal animations",
               "note": {
                 "ar": "تتوقف الحركات تلقائياً لمن فعّل تقليل الحركة في جهازه.",
                 "en": "Motion stops automatically for visitors who ask their device for reduced motion."
@@ -352,6 +370,7 @@
           "settings": [
             {
               "label": "إظهار شريط الإعلانات",
+              "label_en": "Show announcement bar",
               "note": {
                 "ar": "يُظهر الشريط؛ مطفأ في البداية.",
                 "en": "Shows the bar; off by default."
@@ -359,6 +378,7 @@
             },
             {
               "label": "النصوص",
+              "label_en": "Texts",
               "note": {
                 "ar": "لكل نص «أيقونة/رمز قبل النص (إيموجي مثل ✨ 🚚 🎁)» و«النص».",
                 "en": "Each message has an emoji in front and its text."
@@ -366,6 +386,7 @@
             },
             {
               "label": "تفعيل التمرير المتحرك",
+              "label_en": "Enable scrolling motion",
               "note": {
                 "ar": "يحرّك الرسائل أفقياً، مع «سرعة التمرير».",
                 "en": "Scrolls the messages sideways, with its own speed."
@@ -373,6 +394,7 @@
             },
             {
               "label": "الرابط",
+              "label_en": "Link",
               "note": {
                 "ar": "يجعل كل رسالة رابطاً للصفحة المختارة.",
                 "en": "Turns every message into a link to the chosen page."
@@ -380,6 +402,7 @@
             },
             {
               "label": "عرض شريط الإعلانات في",
+              "label_en": "Show announcement bar on",
               "note": {
                 "ar": "جميع الصفحات أو الصفحة الرئيسية فقط.",
                 "en": "All pages, or the home page only."
@@ -387,6 +410,7 @@
             },
             {
               "label": "لون خلفية الشريط",
+              "label_en": "Bar background colour",
               "note": {
                 "ar": "مع «لون نص الشريط».",
                 "en": "With the bar's text colour."
@@ -435,6 +459,7 @@
           "settings": [
             {
               "label": "موضع روابط القائمة",
+              "label_en": "Menu links position",
               "note": {
                 "ar": "البداية (يمين في العربية)، الوسط، أو النهاية (يسار في العربية).",
                 "en": "Start (right in Arabic), centre, or end (left in Arabic)."
@@ -442,6 +467,7 @@
             },
             {
               "label": "تثبيت الهيدر عند التمرير (Sticky)",
+              "label_en": "Keep header on scroll (Sticky)",
               "note": {
                 "ar": "يبقى الهيدر ظاهراً أعلى الشاشة أثناء التمرير.",
                 "en": "Keeps the header at the top of the screen while scrolling."
@@ -449,6 +475,7 @@
             },
             {
               "label": "خلفية شفافة فوق البانر (تصبح صلبة عند التمرير)",
+              "label_en": "Transparent over banner (solid on scroll)",
               "note": {
                 "ar": "جميلة فوق هيرو بصورة داكنة.",
                 "en": "Lovely over a dark hero picture."
@@ -456,6 +483,7 @@
             },
             {
               "label": "لون خلفية الهيدر",
+              "label_en": "Header background colour",
               "note": {
                 "ar": "مع «لون النص والأيقونات» و«لون الأيقونات والأسهم» و«لون خط التمرير (hover) تحت الروابط».",
                 "en": "With the text and icon colour, the icons-and-arrows colour and the hover underline colour."
@@ -463,6 +491,7 @@
             },
             {
               "label": "إظهار الخط السفلي",
+              "label_en": "Show bottom line",
               "note": {
                 "ar": "مع «لون الخط السفلي» و«سُمك الخط السفلي».",
                 "en": "With the border colour and thickness."
@@ -470,6 +499,7 @@
             },
             {
               "label": "المسافة العلوية (سطح المكتب)",
+              "label_en": "Top spacing (desktop)",
               "note": {
                 "ar": "ومثلها المسافة السفلية، ومسافتا الجوال.",
                 "en": "Along with the bottom spacing and the two phone spacings."
@@ -477,6 +507,7 @@
             },
             {
               "label": "إخفاء اللغة",
+              "label_en": "Hide language",
               "note": {
                 "ar": "مع «إخفاء اسم الدولة».",
                 "en": "With «إخفاء اسم الدولة» (hide the country name)."
@@ -543,6 +574,7 @@
           "settings": [
             {
               "label": "نمط قائمة التصنيفات",
+              "label_en": "Category menu style",
               "note": {
                 "ar": "ميجا منيو (بالصور) أو قائمة منسدلة.",
                 "en": "Image mega menu or plain dropdown."
@@ -550,6 +582,7 @@
             },
             {
               "label": "كروت الميجا منيو (اختياري — يستبدل التصنيفات التلقائية)",
+              "label_en": "Mega menu cards (optional — replace automatic categories)",
               "note": {
                 "ar": "لكل بطاقة «الاسم» و«الرابط» و«الصورة»؛ صورة طولية 4:5 مثل 320 × 400.",
                 "en": "Each card has a name, a link and a picture — portrait 4:5, such as 320 × 400."
@@ -587,6 +620,7 @@
           "settings": [
             {
               "label": "لون الأيقونات والأسهم",
+              "label_en": "Icon and arrow colour",
               "note": {
                 "ar": "يلوّن أيقونة البحث مع باقي أيقونات الهيدر.",
                 "en": "Colours the search icon with the other header icons."
@@ -625,6 +659,7 @@
           "settings": [
             {
               "label": "الشعار (عربي — جوال)",
+              "label_en": "Logo (Arabic — phone)",
               "note": {
                 "ar": "الشعار الذي يظهر في هيدر الجوال.",
                 "en": "The logo shown in the phone header."
@@ -632,6 +667,7 @@
             },
             {
               "label": "المسافة العلوية (جوال)",
+              "label_en": "Top spacing (phone)",
               "note": {
                 "ar": "مع «المسافة السفلية (جوال)» لضبط ارتفاع هيدر الجوال.",
                 "en": "With the phone bottom spacing, to set the phone header's height."
@@ -709,6 +745,7 @@
           "settings": [
             {
               "label": "شكل الهيرو",
+              "label_en": "Hero layout",
               "note": {
                 "ar": "شريط سينمائي مستمر · أكورديون صور · سلايدشو.",
                 "en": "Cinema strip · accordion · slideshow."
@@ -716,6 +753,7 @@
             },
             {
               "label": "الصورة (سطح المكتب)",
+              "label_en": "Image (desktop)",
               "note": {
                 "ar": "أفقية 16:9 مثل 1600 × 900؛ و«الصورة (موبايل)» طولية 4:5 مثل 720 × 900.",
                 "en": "Landscape 16:9, such as 1600 × 900; the phone picture is portrait 4:5, such as 720 × 900."
@@ -723,6 +761,7 @@
             },
             {
               "label": "فيديو الخلفية (اختياري)",
+              "label_en": "Background video (optional)",
               "note": {
                 "ar": "رابط يوتيوب أو MP4؛ يعمل صامتاً ومتكرراً، والصورة تظهر حتى يبدأ.",
                 "en": "A YouTube or MP4 link; it plays muted on a loop, with the picture showing until it starts."
@@ -730,6 +769,7 @@
             },
             {
               "label": "تشغيل تلقائي (سلايدشو)",
+              "label_en": "Autoplay (slideshow)",
               "note": {
                 "ar": "مع «مدة الشريحة (ث)».",
                 "en": "With the seconds per slide."
@@ -737,6 +777,7 @@
             },
             {
               "label": "إظهار الأسهم",
+              "label_en": "Show arrows",
               "note": {
                 "ar": "مع «إظهار النقاط» تحت الشرائح.",
                 "en": "With the dots under the slides."
@@ -744,6 +785,7 @@
             },
             {
               "label": "محاذاة المحتوى (سلايدشو)",
+              "label_en": "Content alignment (slideshow)",
               "note": {
                 "ar": "البداية أو الوسط أو النهاية.",
                 "en": "Start, centre or end."
@@ -751,6 +793,7 @@
             },
             {
               "label": "لون التعتيم",
+              "label_en": "Overlay colour",
               "note": {
                 "ar": "مع «شفافية التعتيم» ليبقى النص واضحاً فوق الصورة.",
                 "en": "With the overlay opacity, to keep text readable over the picture."
@@ -758,6 +801,7 @@
             },
             {
               "label": "الارتفاع (سطح المكتب)",
+              "label_en": "Height (desktop)",
               "note": {
                 "ar": "مع «الارتفاع (موبايل)» و«عرض كامل».",
                 "en": "With the phone height and full width."
@@ -832,6 +876,7 @@
           "settings": [
             {
               "label": "سرعة الشريط السينمائي (ث)",
+              "label_en": "Film strip speed (s)",
               "note": {
                 "ar": "رقم أكبر = حركة أهدأ.",
                 "en": "A higher number means calmer motion."
@@ -839,6 +884,7 @@
             },
             {
               "label": "المسافة بين الإطارات",
+              "label_en": "Gap between frames",
               "note": {
                 "ar": "الفراغ بين الصور.",
                 "en": "The gap between pictures."
@@ -846,6 +892,7 @@
             },
             {
               "label": "اتجاه الشريط السينمائي",
+              "label_en": "Film strip direction",
               "note": {
                 "ar": "لليسار أو لليمين.",
                 "en": "Left or right."
@@ -853,6 +900,7 @@
             },
             {
               "label": "إيقاف الحركة عند المرور بالماوس",
+              "label_en": "Pause on mouse hover",
               "note": {
                 "ar": "يتوقف الشريط عندما يقف المؤشر عليه.",
                 "en": "The strip stops when the pointer rests on it."
@@ -860,6 +908,7 @@
             },
             {
               "label": "رابط الزر",
+              "label_en": "Button link",
               "note": {
                 "ar": "لا يظهر الزر بدون رابط.",
                 "en": "No link, no button."
@@ -926,6 +975,7 @@
           "settings": [
             {
               "label": "الشرائح / اللوحات",
+              "label_en": "Slides / panels",
               "note": {
                 "ar": "لكل لوحة «الصورة (سطح المكتب)» و«العنوان» و«الوصف» و«نص الزر» و«الرابط».",
                 "en": "Each panel has a desktop picture, heading, description, button text and link."
@@ -933,6 +983,7 @@
             },
             {
               "label": "شفافية التعتيم",
+              "label_en": "Overlay opacity",
               "note": {
                 "ar": "طبقة فوق الصور تضمن وضوح النص.",
                 "en": "A layer over the pictures that keeps text readable."
@@ -940,6 +991,7 @@
             },
             {
               "label": "الارتفاع (سطح المكتب)",
+              "label_en": "Height (desktop)",
               "note": {
                 "ar": "ارتفاع اللوحات.",
                 "en": "The panels' height."
@@ -1014,6 +1066,7 @@
           "settings": [
             {
               "label": "عنوان ثابت (يظهر في البداية)",
+              "label_en": "Fixed title (shown first)",
               "note": {
                 "ar": "مع «أيقونة العنوان الثابت».",
                 "en": "With its own icon."
@@ -1021,6 +1074,7 @@
             },
             {
               "label": "عناصر الشريط",
+              "label_en": "Ticker items",
               "note": {
                 "ar": "الأيقونات: شحن، إرجاع، دفع آمن، وصل حديثًا، خصم، هدية، وقت محدود وغيرها.",
                 "en": "Icons: shipping, returns, secure payment, new in, discount, gift, limited time and more."
@@ -1028,6 +1082,7 @@
             },
             {
               "label": "نمط الشريط",
+              "label_en": "Ticker style",
               "note": {
                 "ar": "داكن (معكوس)، لون التمييز، خفيف (سطح)، شفاف بحدود.",
                 "en": "Dark (inverse), accent, light surface, or outlined."
@@ -1035,6 +1090,7 @@
             },
             {
               "label": "الفاصل بين العناصر",
+              "label_en": "Separator between items",
               "note": {
                 "ar": "معيّن، نقطة، شرطة، نجمة، أو بدون.",
                 "en": "Diamond, dot, slash, star, or none."
@@ -1042,6 +1098,7 @@
             },
             {
               "label": "سرعة التمرير",
+              "label_en": "Scroll speed",
               "note": {
                 "ar": "رقم أكبر = حركة أهدأ؛ مع «إيقاف عند المرور».",
                 "en": "A higher number means calmer motion; with pause on hover."
@@ -1049,6 +1106,7 @@
             },
             {
               "label": "تلاشي عند الأطراف",
+              "label_en": "Fade at edges",
               "note": {
                 "ar": "يذوب النص عند طرفي الشريط.",
                 "en": "Fades the text out at both ends."
@@ -1107,6 +1165,7 @@
           "settings": [
             {
               "label": "الفئات",
+              "label_en": "Categories",
               "note": {
                 "ar": "صورة طولية 4:5 مثل 1200 × 1500، والموضوع في الوسط لأن أحجام البطاقات تختلف.",
                 "en": "Portrait 4:5 pictures, such as 1200 × 1500, subject in the centre as tile sizes vary."
@@ -1114,6 +1173,7 @@
             },
             {
               "label": "عدد المنتجات",
+              "label_en": "Number of products",
               "note": {
                 "ar": "نص حر مثل «١٨ قطعة».",
                 "en": "Free text, such as «18 pieces»."
@@ -1121,6 +1181,7 @@
             },
             {
               "label": "إظهار أرقام الفئات",
+              "label_en": "Show category numbers",
               "note": {
                 "ar": "مع «إظهار عدد المنتجات».",
                 "en": "With show product counts."
@@ -1128,6 +1189,7 @@
             },
             {
               "label": "شفافية التعتيم",
+              "label_en": "Overlay opacity",
               "note": {
                 "ar": "طبقة فوق الصور لوضوح الأسماء.",
                 "en": "A layer over the pictures so names stay readable."
@@ -1135,6 +1197,7 @@
             },
             {
               "label": "محاذاة العنوان",
+              "label_en": "Title alignment",
               "note": {
                 "ar": "البداية أو الوسط أو النهاية.",
                 "en": "Start, centre or end."
@@ -1209,6 +1272,7 @@
           "settings": [
             {
               "label": "مصدر المنتجات",
+              "label_en": "Product source",
               "note": {
                 "ar": "أحدث المنتجات، المنتجات المخفّضة، الأكثر مبيعاً، الأعلى تقييماً، تصنيف محدد، منتجات أختارها بنفسي.",
                 "en": "Latest, discounted, best-selling, top-rated, a single category, or products you pick."
@@ -1216,6 +1280,7 @@
             },
             {
               "label": "عدد المنتجات المعروضة",
+              "label_en": "Number of products shown",
               "note": {
                 "ar": "0 = عرض الكل.",
                 "en": "0 shows them all."
@@ -1223,6 +1288,7 @@
             },
             {
               "label": "تخطّي أول (عدد منتجات)",
+              "label_en": "Skip first (number of products)",
               "note": {
                 "ar": "لعرض منتجات مختلفة في قسمين من المصدر نفسه.",
                 "en": "So two blocks from the same source show different products."
@@ -1230,6 +1296,7 @@
             },
             {
               "label": "طريقة العرض",
+              "label_en": "Display mode",
               "note": {
                 "ar": "سلايدر أو شبكة؛ مع «عدد الأعمدة (سطح المكتب)» و«نسبة صورة المنتج».",
                 "en": "Slider or grid; with the desktop columns and the product image ratio."
@@ -1237,6 +1304,7 @@
             },
             {
               "label": "تحريك تلقائي مستمر (سلايدر)",
+              "label_en": "Continuous auto-scroll (slider)",
               "note": {
                 "ar": "مع «السحب بالماوس (سلايدر)» و«إظهار أسهم التنقّل».",
                 "en": "With mouse dragging and navigation arrows."
@@ -1244,6 +1312,7 @@
             },
             {
               "label": "عرض زر «عرض الكل»",
+              "label_en": "Show «View all» button",
               "note": {
                 "ar": "مع «نص زر عرض الكل» و«رابط «عرض الكل»».",
                 "en": "With the button's text and link."
@@ -1310,6 +1379,7 @@
           "settings": [
             {
               "label": "التاب ١ — طريقة العرض",
+              "label_en": "Tab 1 — display mode",
               "note": {
                 "ar": "شبكة ثابتة، سلايدر متحرك مستمر، أو سلايدر بالأسهم والسحب.",
                 "en": "Fixed grid, continuous moving slider, or slider with arrows and dragging."
@@ -1317,6 +1387,7 @@
             },
             {
               "label": "التاب ١ — عدد المنتجات",
+              "label_en": "Tab 1 — number of products",
               "note": {
                 "ar": "مع «التاب ١ — تخطّي أول (منتجات)».",
                 "en": "With how many products to skip."
@@ -1324,6 +1395,7 @@
             },
             {
               "label": "محاذاة التابات",
+              "label_en": "Tab alignment",
               "note": {
                 "ar": "البداية، الوسط، أو النهاية.",
                 "en": "Start, centre or end."
@@ -1331,6 +1403,7 @@
             },
             {
               "label": "شكل التاب",
+              "label_en": "Tab shape",
               "note": {
                 "ar": "مربّع بإطار أو خط سفلي؛ مع «استدارة إطار التاب».",
                 "en": "Boxed or underline; with the corner radius."
@@ -1338,6 +1411,7 @@
             },
             {
               "label": "خلفية التاب النشط",
+              "label_en": "Active tab background",
               "note": {
                 "ar": "مع «نص التاب النشط» و«إطار التاب النشط».",
                 "en": "With the active tab's text and border."
@@ -1345,6 +1419,7 @@
             },
             {
               "label": "عرض زر «تسوّق الفئة»",
+              "label_en": "Show «Shop the category» button",
               "note": {
                 "ar": "مع «بادئة زر عرض الكل» التي يليها اسم التبويب.",
                 "en": "With a prefix followed by the tab's name."
@@ -1421,6 +1496,7 @@
           "settings": [
             {
               "label": "شكل البانر",
+              "label_en": "Banner layout",
               "note": {
                 "ar": "تقسيم (وسائط | لوحة) أو تراكب فوق الوسائط.",
                 "en": "Split (media | panel) or overlay on the media."
@@ -1428,6 +1504,7 @@
             },
             {
               "label": "جهة الوسائط (تقسيم)",
+              "label_en": "Media side (split)",
               "note": {
                 "ar": "مع «تناوب الجهات بين الفصول».",
                 "en": "With alternating sides between chapters."
@@ -1435,6 +1512,7 @@
             },
             {
               "label": "موضع المحتوى (تراكب)",
+              "label_en": "Content position (overlay)",
               "note": {
                 "ar": "تسعة مواضع على الصورة.",
                 "en": "Nine positions on the picture."
@@ -1442,6 +1520,7 @@
             },
             {
               "label": "بطاقة المحتوى (تراكب)",
+              "label_en": "Content card (overlay)",
               "note": {
                 "ar": "زجاجية ضبابية، معتمة، أو بدون بطاقة؛ مع «شفافية بطاقة الزجاج» و«ضبابية البطاقة».",
                 "en": "Frosted glass, solid, or none; with glass opacity and blur."
@@ -1449,6 +1528,7 @@
             },
             {
               "label": "رابط الفيديو (يوتيوب أو ملف MP4)",
+              "label_en": "Video link (YouTube or MP4 file)",
               "note": {
                 "ar": "مع «صورة الفيديو المؤقتة» التي تظهر قبل بدء الفيديو.",
                 "en": "With a temporary picture shown before the film starts."
@@ -1456,6 +1536,7 @@
             },
             {
               "label": "ارتفاع البانر",
+              "label_en": "Banner height",
               "note": {
                 "ar": "صغير، متوسط، كبير، ملء الشاشة.",
                 "en": "Small, medium, large, full screen."
@@ -1463,6 +1544,7 @@
             },
             {
               "label": "تكبير بطيء (Ken Burns)",
+              "label_en": "Slow zoom (Ken Burns)",
               "note": {
                 "ar": "حركة تكبير هادئة على الصورة.",
                 "en": "A slow zoom on the picture."
@@ -1470,6 +1552,7 @@
             },
             {
               "label": "أولوية تحميل عالية (أعلى الصفحة)",
+              "label_en": "High loading priority (top of page)",
               "note": {
                 "ar": "فعّله فقط إذا كان القسم أول ما في الصفحة.",
                 "en": "Switch it on only when this block opens the page."
@@ -1536,6 +1619,7 @@
           "settings": [
             {
               "label": "صورة الإطلالة الكبيرة",
+              "label_en": "Large outfit image",
               "note": {
                 "ar": "طولية 4:5 مثل 900 × 1125؛ مع «موضع الصورة»: في البداية أو في النهاية.",
                 "en": "Portrait 4:5, such as 900 × 1125; with its position: start or end."
@@ -1543,6 +1627,7 @@
             },
             {
               "label": "موضع النقطة أفقيًا",
+              "label_en": "Hotspot horizontal position",
               "note": {
                 "ar": "ومثله «موضع النقطة عموديًا»، من 0 إلى 100؛ 50 و50 = وسط الصورة.",
                 "en": "With the vertical position, 0 to 100; 50 and 50 is the middle of the picture."
@@ -1550,6 +1635,7 @@
             },
             {
               "label": "السعر",
+              "label_en": "Price",
               "note": {
                 "ar": "نص حر، مع «السعر قبل الخصم».",
                 "en": "Free text, with the compare-at price."
@@ -1557,6 +1643,7 @@
             },
             {
               "label": "المنتج (للإضافة للسلة)",
+              "label_en": "Product (for add to cart)",
               "note": {
                 "ar": "المنتج الذي له مقاسات أو ألوان يفتح نافذة اختيار الخيارات.",
                 "en": "A product with sizes or colours opens a dialog to choose them."
@@ -1564,6 +1651,7 @@
             },
             {
               "label": "إظهار زر «أضِف الإطلالة كاملة»",
+              "label_en": "Show «Add the whole outfit» button",
               "note": {
                 "ar": "مع «نص زر الإضافة الكامل» و«رابط بديل للزر».",
                 "en": "With its text and a fallback link."
@@ -1638,6 +1726,7 @@
           "settings": [
             {
               "label": "الخانة",
+              "label_en": "Slot",
               "note": {
                 "ar": "معطف / جاكيت، الأعلى، الأسفل، الأحذية، الحقيبة، إكسسوار.",
                 "en": "Outerwear, top, bottom, shoes, bag, accessory."
@@ -1645,6 +1734,7 @@
             },
             {
               "label": "السعر رقمًا (للإجمالي)",
+              "label_en": "Price as a number (for the total)",
               "note": {
                 "ar": "أرقام فقط مثل 650 ليُحسب الإجمالي صحيحاً.",
                 "en": "Digits only, such as 650, so the total adds up."
@@ -1652,6 +1742,7 @@
             },
             {
               "label": "المنتج (للإضافة للسلة)",
+              "label_en": "Product (for add to cart)",
               "note": {
                 "ar": "المنتج الذي يُضاف عند إضافة الطقم.",
                 "en": "The product added with the set."
@@ -1659,6 +1750,7 @@
             },
             {
               "label": "رمز العملة",
+              "label_en": "Currency symbol",
               "note": {
                 "ar": "اتركه فارغاً لعملة المتجر.",
                 "en": "Leave it empty for your store's currency."
@@ -1733,6 +1825,7 @@
           "settings": [
             {
               "label": "شكل البانر",
+              "label_en": "Banner layout",
               "note": {
                 "ar": "مكدّس فوق الخلفية (صورة 16:10) أو بطاقة مقسومة (صورة + محتوى، صورة 3:2).",
                 "en": "Stacked over a background (16:10 picture) or a split card (picture + content, 3:2 picture)."
@@ -1740,6 +1833,7 @@
             },
             {
               "label": "نمط الساعة",
+              "label_en": "Clock style",
               "note": {
                 "ar": "بطاقات مصمتة (لوحة قلّابة) أو بطاقات مُحدّدة.",
                 "en": "Solid split-flap cards or outlined cards."
@@ -1747,6 +1841,7 @@
             },
             {
               "label": "تاريخ انتهاء العرض",
+              "label_en": "Offer end date",
               "note": {
                 "ar": "بصيغة سنة-شهر-يوم؛ بدون تاريخ تختفي الساعة.",
                 "en": "Year-month-day; no date, no clock."
@@ -1754,6 +1849,7 @@
             },
             {
               "label": "تنبيه العاجلية قبل (ساعات)",
+              "label_en": "Urgency alert before (hours)",
               "note": {
                 "ar": "تتلون الساعة بلون التنبيه قرب النهاية.",
                 "en": "The clock changes colour near the end."
@@ -1761,6 +1857,7 @@
             },
             {
               "label": "عند انتهاء العرض",
+              "label_en": "When the offer ends",
               "note": {
                 "ar": "إظهار رسالة انتهاء أو إخفاء القسم؛ مع «عنوان الانتهاء» و«رسالة الانتهاء».",
                 "en": "Show an 'ended' message or hide the block; with its heading and message."
@@ -1768,6 +1865,7 @@
             },
             {
               "label": "مزايا سريعة",
+              "label_en": "Quick perks",
               "note": {
                 "ar": "أسطر قصيرة تحت العنوان.",
                 "en": "Short lines under the heading."
@@ -1842,6 +1940,7 @@
           "settings": [
             {
               "label": "مقاس البلاطة",
+              "label_en": "Tile size",
               "note": {
                 "ar": "تلقائي (متناوب)، مميّزة (كبيرة)، طويلة، عريضة، عادية. صور طولية 4:5، وأفقية للعريضة.",
                 "en": "Auto, feature, tall, wide, standard. Portrait 4:5 pictures; landscape for wide tiles."
@@ -1849,6 +1948,7 @@
             },
             {
               "label": "موضع التسمية",
+              "label_en": "Caption position",
               "note": {
                 "ar": "فوق الصورة (تظهر عند التمرير) أو أسفل الصورة.",
                 "en": "Over the picture (on hover) or below it."
@@ -1856,6 +1956,7 @@
             },
             {
               "label": "إظهار أرقام الإطلالات",
+              "label_en": "Show look numbers",
               "note": {
                 "ar": "مع «تكبير الصورة عند التمرير».",
                 "en": "With hover zoom."
@@ -1863,6 +1964,7 @@
             },
             {
               "label": "تعتيم الصورة (لوضوح النص)",
+              "label_en": "Image overlay (for readable text)",
               "note": {
                 "ar": "مع «المسافة بين البلاطات».",
                 "en": "With the gap between tiles."
@@ -1870,6 +1972,7 @@
             },
             {
               "label": "حافة مقوّسة",
+              "label_en": "Arched edge",
               "note": {
                 "ar": "تظهر فقط مع «نمط الأقواس» المدبّب.",
                 "en": "Shows only with the pointed arch style."
@@ -1944,6 +2047,7 @@
           "settings": [
             {
               "label": "رابط الفيديو على يوتيوب",
+              "label_en": "YouTube video link",
               "note": {
                 "ar": "رابط مشاهدة أو مشاركة أو Shorts، ويُقبل أيضاً رابط مباشر لملف MP4.",
                 "en": "A watch, share or Shorts link; a direct MP4 link works too."
@@ -1951,6 +2055,7 @@
             },
             {
               "label": "صورة الغلاف",
+              "label_en": "Cover image",
               "note": {
                 "ar": "أفقية 16:9 مثل 1600 × 900؛ بدونها تظهر صورة يوتيوب.",
                 "en": "Landscape 16:9, such as 1600 × 900; without it YouTube's own picture shows."
@@ -1958,6 +2063,7 @@
             },
             {
               "label": "عرض الفيديو",
+              "label_en": "Video width",
               "note": {
                 "ar": "متوسط (في المنتصف)، بعرض المحتوى، بعرض الصفحة كاملاً.",
                 "en": "Medium (centred), content width, or full page width."
@@ -1965,6 +2071,7 @@
             },
             {
               "label": "أبعاد الفيديو",
+              "label_en": "Video aspect ratio",
               "note": {
                 "ar": "عريض 16:9، سينمائي 21:9، كلاسيكي 4:3، مربع 1:1، طولي 9:16 (Shorts).",
                 "en": "Wide 16:9, cinema 21:9, classic 4:3, square 1:1, vertical 9:16 (Shorts)."
@@ -1972,6 +2079,7 @@
             },
             {
               "label": "إظهار زر تحت الفيديو",
+              "label_en": "Show button below video",
               "note": {
                 "ar": "مع «نص الزر» و«رابط الزر»، و«نص تحت الفيديو».",
                 "en": "With its text and link, and a caption under the video."
@@ -2038,6 +2146,7 @@
           "settings": [
             {
               "label": "نوع البطاقة",
+              "label_en": "Card type",
               "note": {
                 "ar": "أيقونة + نص، رقم مميّز، اقتباس (لون مميّز)، صورة كاملة.",
                 "en": "Icon + text, highlighted number, quote (accent), full picture."
@@ -2045,6 +2154,7 @@
             },
             {
               "label": "الحجم",
+              "label_en": "Size",
               "note": {
                 "ar": "تلقائي (إيقاع تحريري)، عادي، عريض، طويل، كبير. صورة أفقية للعريضة وطولية للطويلة.",
                 "en": "Auto, standard, wide, tall, large. Landscape pictures for wide tiles, portrait for tall ones."
@@ -2052,6 +2162,7 @@
             },
             {
               "label": "الرقم المميّز (لبطاقة الرقم)",
+              "label_en": "Highlight number (for number card)",
               "note": {
                 "ar": "اكتبه كما تريد ظهوره، مثل «+١٢٬٠٠٠» أو «٩٨٪».",
                 "en": "Type it as you want it to read, such as «+12,000» or «98%»."
@@ -2059,6 +2170,7 @@
             },
             {
               "label": "عدّ الرقم تصاعديًا",
+              "label_en": "Count the number up",
               "note": {
                 "ar": "مع «يبدأ العدّ من» و«مدّة العدّ» و«يعدّ في كل مرة».",
                 "en": "With the start value, duration, and whether it counts again each time."
@@ -2066,6 +2178,7 @@
             },
             {
               "label": "إظهار أرقام البلاطات",
+              "label_en": "Show tile numbers",
               "note": {
                 "ar": "رقم صغير في زاوية كل بطاقة.",
                 "en": "A small number in each tile's corner."
@@ -2140,6 +2253,7 @@
           "settings": [
             {
               "label": "جدول المقاسات",
+              "label_en": "Size chart",
               "note": {
                 "ar": "مثال: «المقاس,الصدر,الخصر,الأرداف» ثم «S,84,66,90». السطر الأول يحدد الأسئلة وعددها.",
                 "en": "Example: «Size,Bust,Waist,Hips», then «S,84,66,90». The first line sets the questions and how many there are."
@@ -2147,6 +2261,7 @@
             },
             {
               "label": "صورة جانبية",
+              "label_en": "Side image",
               "note": {
                 "ar": "طولية 4:5 مثل 1000 × 1250؛ بدونها يأخذ النموذج عرض القسم.",
                 "en": "Portrait 4:5, such as 1000 × 1250; without it the form spans the block."
@@ -2154,6 +2269,7 @@
             },
             {
               "label": "نص الزر",
+              "label_en": "Button text",
               "note": {
                 "ar": "مع «ملاحظة النتيجة».",
                 "en": "With the note under the result."
@@ -2161,6 +2277,7 @@
             },
             {
               "label": "رسالة: لا يوجد مقاس مناسب",
+              "label_en": "Message: no matching size",
               "note": {
                 "ar": "مع «رسالة: لم يُدخل أي مقاس» و«رسالة: قياس غير صحيح».",
                 "en": "With the messages for nothing entered and an invalid measurement."
@@ -2235,6 +2352,7 @@
           "settings": [
             {
               "label": "إظهار شارة التقييم العام",
+              "label_en": "Show overall rating badge",
               "note": {
                 "ar": "مع «المعدّل العام» و«عدد النجوم الممتلئة» و«عدد التقييمات» و«ملاحظة صغيرة».",
                 "en": "With the score, filled stars, number of reviews and a small note."
@@ -2242,6 +2360,7 @@
             },
             {
               "label": "إظهار صورة العميل",
+              "label_en": "Show customer photo",
               "note": {
                 "ar": "صورة مربعة 200 × 200 (اختيارية).",
                 "en": "A square 200 × 200 photo (optional)."
@@ -2249,6 +2368,7 @@
             },
             {
               "label": "إظهار شارة «موثّق»",
+              "label_en": "Show «Verified» badge",
               "note": {
                 "ar": "مع «نص شارة التوثيق»، وتظهر للرأي المفعّل فيه «مشتري موثّق».",
                 "en": "With its wording; shows on reviews marked as verified buyers."
@@ -2256,6 +2376,7 @@
             },
             {
               "label": "توزيع متعرّج للبطاقات",
+              "label_en": "Staggered card layout",
               "note": {
                 "ar": "مع «مقدار الإزاحة».",
                 "en": "With its offset."
@@ -2263,6 +2384,7 @@
             },
             {
               "label": "إظهار الأسهم",
+              "label_en": "Show arrows",
               "note": {
                 "ar": "مع «إظهار النقاط» و«السحب بالفأرة».",
                 "en": "With dots and mouse dragging."
@@ -2337,6 +2459,7 @@
           "settings": [
             {
               "label": "طريقة العرض",
+              "label_en": "Display mode",
               "note": {
                 "ar": "سلايدر (صف واحد يتحرك) أو شبكة (كل الماركات ظاهرة).",
                 "en": "A moving slider or a grid."
@@ -2344,6 +2467,7 @@
             },
             {
               "label": "عدد الماركات في الصف (سطح المكتب)",
+              "label_en": "Brands per row (desktop)",
               "note": {
                 "ar": "ومثله للجوال.",
                 "en": "And the same for phones."
@@ -2351,6 +2475,7 @@
             },
             {
               "label": "خلفية بطاقة الشعار",
+              "label_en": "Logo card background",
               "note": {
                 "ar": "أبيض، أو تتبع ألوان الثيم (لشعارات بخلفية شفافة).",
                 "en": "White, or following the theme (for transparent logos)."
@@ -2358,6 +2483,7 @@
             },
             {
               "label": "شعارات رمادية تتلوّن عند المرور",
+              "label_en": "Grey logos, coloured on hover",
               "note": {
                 "ar": "مع «إظهار اسم الماركة تحت الشعار».",
                 "en": "With brand names under the logos."
@@ -2365,6 +2491,7 @@
             },
             {
               "label": "إظهار زر «كل الماركات»",
+              "label_en": "Show «All brands» button",
               "note": {
                 "ar": "مع «نص الزر».",
                 "en": "With its text."
@@ -2431,6 +2558,7 @@
           "settings": [
             {
               "label": "شكل القسم",
+              "label_en": "Section layout",
               "note": {
                 "ar": "مقسّم (عمود جانبي) أو مكدّس (عنوان بالأعلى).",
                 "en": "Split (side column) or stacked (heading on top)."
@@ -2438,6 +2566,7 @@
             },
             {
               "label": "جهة الأسئلة (تخطيط منقسم)",
+              "label_en": "Questions side (split layout)",
               "note": {
                 "ar": "تلقائي (حسب اتجاه اللغة)، يمين، أو يسار.",
                 "en": "Auto (by language direction), right or left."
@@ -2445,6 +2574,7 @@
             },
             {
               "label": "فتح سؤال واحد فقط",
+              "label_en": "Open one question only",
               "note": {
                 "ar": "يغلق السؤال المفتوح عند فتح غيره.",
                 "en": "Closes the open question when another opens."
@@ -2452,6 +2582,7 @@
             },
             {
               "label": "الإجابة",
+              "label_en": "Answer",
               "note": {
                 "ar": "نص عادي، والأسطر الجديدة تظهر كما تكتبها.",
                 "en": "Plain text; line breaks show as you type them."
@@ -2459,6 +2590,7 @@
             },
             {
               "label": "صورة السؤال (اختياري)",
+              "label_en": "Question image (optional)",
               "note": {
                 "ar": "صورة طولية 4:5 تحل محل صورة العمود الجانبي عند فتح السؤال.",
                 "en": "A portrait 4:5 picture that replaces the side picture when the question opens."
@@ -2533,6 +2665,7 @@
           "settings": [
             {
               "label": "مقالات المدونة",
+              "label_en": "Blog articles",
               "note": {
                 "ar": "المقالات التي تظهر في القسم.",
                 "en": "The articles shown in the block."
@@ -2540,6 +2673,7 @@
             },
             {
               "label": "طريقة العرض",
+              "label_en": "Display mode",
               "note": {
                 "ar": "سلايدر (صف واحد يتحرك) أو شبكة (كل المقالات ظاهرة).",
                 "en": "A moving slider or a grid."
@@ -2547,6 +2681,7 @@
             },
             {
               "label": "إظهار الأسهم",
+              "label_en": "Show arrows",
               "note": {
                 "ar": "مع «السحب بالفأرة».",
                 "en": "With mouse dragging."
@@ -2554,6 +2689,7 @@
             },
             {
               "label": "إظهار زر «كل المقالات»",
+              "label_en": "Show «All articles» button",
               "note": {
                 "ar": "مع «نص الزر».",
                 "en": "With its text."
@@ -2593,6 +2729,7 @@
           "settings": [
             {
               "label": "الشكل",
+              "label_en": "Shape",
               "note": {
                 "ar": "خط، متقطّع، منقّط، متدرّج، زخرفة في الوسط، نص في الوسط.",
                 "en": "Line, dashed, dotted, gradient, centred ornament, centred label."
@@ -2600,6 +2737,7 @@
             },
             {
               "label": "الزخرفة",
+              "label_en": "Ornament",
               "note": {
                 "ar": "ماسة، ثلاث ماسات، نقطة، نجمة، علّاقة، إبرة وخيط.",
                 "en": "Diamond, three diamonds, dot, star, hanger, needle and thread."
@@ -2607,6 +2745,7 @@
             },
             {
               "label": "سماكة الخط",
+              "label_en": "Line thickness",
               "note": {
                 "ar": "مع «العرض» و«المحاذاة».",
                 "en": "With the width and alignment."
@@ -2614,6 +2753,7 @@
             },
             {
               "label": "لون الزخرفة",
+              "label_en": "Ornament colour",
               "note": {
                 "ar": "مع «لون الخط» و«خلفية مخصّصة».",
                 "en": "With the line colour and an optional background."
@@ -2669,6 +2809,7 @@
           "settings": [
             {
               "label": "صور متحركة (محسنة)",
+              "label_en": "Enhances Animated Images",
               "note": {
                 "ar": "معرض صور بعناوين وأزرار، مع «فيديو الخلفية (اختياري)» لكل صورة؛ صورة 900 × 600.",
                 "en": "Picture slider with titles and buttons, each slide accepting a background video; 900 × 600 pictures."
@@ -2676,6 +2817,7 @@
             },
             {
               "label": "منتجات متحركة مع خلفية",
+              "label_en": "Animated products with a background",
               "note": {
                 "ar": "منتجات تتحرك فوق صورة خلفية 1233 × 500.",
                 "en": "Products moving over a 1233 × 500 background picture."
@@ -2683,6 +2825,7 @@
             },
             {
               "label": "صور مربعة (محسنة)",
+              "label_en": "Enhanced square images",
               "note": {
                 "ar": "بنرات صور بعنوان ونص ورابط؛ صورة 640 × 427.",
                 "en": "Picture banners with heading, text and link; 640 × 427 pictures."
@@ -2727,6 +2870,7 @@
           "settings": [
             {
               "label": "فيديو الخلفية (اختياري)",
+              "label_en": "Background video (optional)",
               "note": {
                 "ar": "الهيرو الرئيسي بشكل السلايدشو، داخل كل شريحة.",
                 "en": "Hero, slideshow layout, inside each slide."
@@ -2734,6 +2878,7 @@
             },
             {
               "label": "رابط الفيديو (يوتيوب أو ملف MP4)",
+              "label_en": "Video link (YouTube or MP4 file)",
               "note": {
                 "ar": "بانر القصّة بعد اختيار «نوع الوسائط»: فيديو، وكذلك الفوتر تحت «صورة جانبية للفوتر (اختياري)».",
                 "en": "Story Banner after choosing the video media type, and the footer under its side picture."
@@ -2741,6 +2886,7 @@
             },
             {
               "label": "رابط الفيديو على يوتيوب",
+              "label_en": "YouTube video link",
               "note": {
                 "ar": "قسم فيديو يوتيوب (ستايل مارك).",
                 "en": "The YouTube video (Marc style) block."
@@ -2789,6 +2935,7 @@
           "settings": [
             {
               "label": "لون التمييز في صفحة المنتج",
+              "label_en": "Product page accent colour",
               "note": {
                 "ar": "يلوّن الأزرار والتفاصيل في صفحة المنتج والعرض السريع.",
                 "en": "Colours the buttons and details on the product page and in quick view."
@@ -2796,6 +2943,7 @@
             },
             {
               "label": "تكبير الصورة عند التحويم",
+              "label_en": "Zoom image on hover",
               "note": {
                 "ar": "مع «تكبير الصور في سليدر صور المنتج» و«طريقة عرض الصور في سليدر صور المنتج».",
                 "en": "With zoom in the picture slider and how pictures fit it."
@@ -2803,6 +2951,7 @@
             },
             {
               "label": "شريط شراء ثابت أثناء التمرير",
+              "label_en": "Sticky buy bar on scroll",
               "note": {
                 "ar": "صورة المنتج واسمه وسعره وزر الإضافة أسفل الشاشة.",
                 "en": "The product's picture, name, price and add button at the bottom of the screen."
@@ -2810,6 +2959,7 @@
             },
             {
               "label": "عرض خيارات المنتج في لوحة قابلة للطي",
+              "label_en": "Show product options in a collapsible panel",
               "note": {
                 "ar": "المنتج الذي له خياران أو أقل يعرض خياراته كاملة دائماً.",
                 "en": "Products with two options or fewer always show them in full."
@@ -2817,6 +2967,7 @@
             },
             {
               "label": "إظهار صف المزايا",
+              "label_en": "Show perks row",
               "note": {
                 "ar": "أربع مزايا، لكل منها «الميزة 1 — النص» و«الميزة 1 — أيقونة» (مربعة بخلفية شفافة).",
                 "en": "Four benefits, each with a text and an optional square, transparent icon."
@@ -2824,6 +2975,7 @@
             },
             {
               "label": "إظهار منتجات ذات صلة",
+              "label_en": "Show related products",
               "note": {
                 "ar": "مع «عنوان صغير فوق «ذات صلة»» و«عنوان «ذات صلة»»؛ لا يظهر إن لم توجد منتجات مرتبطة.",
                 "en": "With its eyebrow and heading; hidden when no products are linked."
@@ -2831,6 +2983,7 @@
             },
             {
               "label": "إظهار مسار التنقل في صفحة المنتج",
+              "label_en": "Show breadcrumbs on product page",
               "note": {
                 "ar": "مع «تفعيل إشعار الإضافة للسلة المحسن» و«اظهار الوسوم».",
                 "en": "With the enhanced add-to-cart notice and tags."
@@ -2903,6 +3056,7 @@
           "settings": [
             {
               "label": "الصورة الثانية والألوان عند المرور على البطاقة",
+              "label_en": "Second image and colours on card hover",
               "note": {
                 "ar": "النص البديل نفسه يربط كل دائرة لون في بطاقة المنتج بصور ذلك اللون.",
                 "en": "The same alt text links each colour dot on the product card to that colour's pictures."
@@ -2960,6 +3114,7 @@
           "settings": [
             {
               "label": "إظهار دليل المقاسات",
+              "label_en": "Show size guide",
               "note": {
                 "ar": "يُظهر الرابط في صفحة المنتج والعرض السريع.",
                 "en": "Shows the link on the product page and in quick view."
@@ -2967,6 +3122,7 @@
             },
             {
               "label": "جدول المقاسات العام",
+              "label_en": "General size chart",
               "note": {
                 "ar": "مثال: «المقاس,الصدر,الخصر» ثم «S,84,66». اتركه فارغاً فلا يظهر الرابط على المنتجات بلا دليل خاص.",
                 "en": "Example: «Size,Bust,Waist», then «S,84,66». Leave it empty and the link won't show on products without their own guide."
@@ -2974,6 +3130,7 @@
             },
             {
               "label": "ملاحظة دليل المقاسات",
+              "label_en": "Size guide note",
               "note": {
                 "ar": "سطر تحت الجدول.",
                 "en": "A line under the table."
@@ -2981,6 +3138,7 @@
             },
             {
               "label": "صفحة دليل المقاسات الكامل",
+              "label_en": "Full size guide page",
               "note": {
                 "ar": "رابط اختياري لصفحة فيها الدليل الكامل.",
                 "en": "An optional link to a page with the full guide."
@@ -3020,6 +3178,7 @@
           "settings": [
             {
               "label": "شكل بطاقة المنتج",
+              "label_en": "Product card style",
               "note": {
                 "ar": "عمودي أو أفقي.",
                 "en": "Vertical or horizontal."
@@ -3027,6 +3186,7 @@
             },
             {
               "label": "عدد الأعمدة على الكمبيوتر",
+              "label_en": "Columns on desktop",
               "note": {
                 "ar": "من 2 إلى 5؛ و«عدد الأعمدة على الجوال» 1 أو 2.",
                 "en": "2 to 5; and 1 or 2 on phones."
@@ -3034,6 +3194,7 @@
             },
             {
               "label": "نسبة صورة البطاقة",
+              "label_en": "Card image ratio",
               "note": {
                 "ar": "تلقائي (4:5)، مربّع (1:1)، طولي (3:4).",
                 "en": "Auto (4:5), square (1:1), portrait (3:4)."
@@ -3041,6 +3202,7 @@
             },
             {
               "label": "الصورة الثانية والألوان عند المرور على البطاقة",
+              "label_en": "Second image and colours on card hover",
               "note": {
                 "ar": "تظهر الدوائر للمنتج الذي له خيار ألوان بقيمتين أو أكثر.",
                 "en": "Dots appear for products whose colour option has two or more values."
@@ -3048,6 +3210,7 @@
             },
             {
               "label": "خلفية شارة الخصم",
+              "label_en": "Discount badge background",
               "note": {
                 "ar": "مع «لون نص شارة الخصم»، ومثلهما لشارة نفاد الكمية.",
                 "en": "With its text colour, and the same pair for the sold-out badge."
@@ -3055,6 +3218,7 @@
             },
             {
               "label": "إظهار العدّاد على بطاقات الخصم",
+              "label_en": "Show countdown on discount cards",
               "note": {
                 "ar": "مع «تاريخ انتهاء العرض» و«وقت الانتهاء» و«نص العدّاد» للمنتجات التي ليس لتخفيضها تاريخ انتهاء في سلة.",
                 "en": "With an end date, end time and label, for products whose discount has no end date in Salla."
@@ -3062,6 +3226,7 @@
             },
             {
               "label": "إظهار زر \"أعلمني عند التوفر\" في بطاقة المنتج",
+              "label_en": "Show \"Notify me when available\" on product card",
               "note": {
                 "ar": "يظهر على البطاقات النافدة.",
                 "en": "Shows on sold-out cards."
@@ -3125,6 +3290,7 @@
           "settings": [
             {
               "label": "لون التمييز في صفحة المنتج",
+              "label_en": "Product page accent colour",
               "note": {
                 "ar": "لون الأزرار والتفاصيل في النافذة.",
                 "en": "The colour of buttons and details in the window."
@@ -3132,6 +3298,7 @@
             },
             {
               "label": "إظهار دليل المقاسات",
+              "label_en": "Show size guide",
               "note": {
                 "ar": "رابط «دليل المقاسات» داخل النافذة.",
                 "en": "The size-guide link inside the window."
@@ -3172,6 +3339,7 @@
           "settings": [
             {
               "label": "إظهار مسار التنقل في صفحة قائمة المنتجات",
+              "label_en": "Show breadcrumbs on product list page",
               "note": {
                 "ar": "مسار التنقل فوق قائمة المنتجات.",
                 "en": "The breadcrumb above the product list."
@@ -3179,6 +3347,7 @@
             },
             {
               "label": "صورة صفحة التصنيف",
+              "label_en": "Category page image",
               "note": {
                 "ar": "من «إعدادات الصفحات الداخلية»؛ تظهر في بانر التصنيف الذي ليس له صورة.",
                 "en": "From the inner-page settings; shows in the banner of a category with no picture."
@@ -3186,6 +3355,7 @@
             },
             {
               "label": "عدد الأعمدة على الكمبيوتر",
+              "label_en": "Columns on desktop",
               "note": {
                 "ar": "عدد بطاقات المنتجات في الصف.",
                 "en": "How many product cards per row."
@@ -3252,6 +3422,7 @@
           "settings": [
             {
               "label": "الصورة الافتراضية",
+              "label_en": "Default image",
               "note": {
                 "ar": "تظهر في كل الصفحات الداخلية؛ شريط عريض جداً 2000 × 600.",
                 "en": "Shown on every inner page; a very wide 2000 × 600 strip."
@@ -3259,6 +3430,7 @@
             },
             {
               "label": "ارتفاع رأس الصفحة",
+              "label_en": "Page header height",
               "note": {
                 "ar": "مع «إظهار عنوان الصفحة».",
                 "en": "With show the page title."
@@ -3266,6 +3438,7 @@
             },
             {
               "label": "لون الطبقة فوق الصورة",
+              "label_en": "Image overlay colour",
               "note": {
                 "ar": "مع «شفافية الطبقة».",
                 "en": "With the overlay opacity."
@@ -3273,6 +3446,7 @@
             },
             {
               "label": "صورة صفحة المنتج",
+              "label_en": "Product page image",
               "note": {
                 "ar": "ومثلها «صورة صفحة المنتجات» و«صورة صفحة التصنيف» و«صورة صفحة التصنيفات والماركات» و«صورة الصفحات التعريفية» و«صورة المدوّنة».",
                 "en": "And the same for the products, category, categories and brands, information pages and blog."
@@ -3312,6 +3486,7 @@
           "settings": [
             {
               "label": "خلفية عدّاد السلة",
+              "label_en": "Cart counter background",
               "note": {
                 "ar": "مع «لون رقم السلة».",
                 "en": "With the counter's number colour."
@@ -3319,6 +3494,7 @@
             },
             {
               "label": "تفعيل إشعار الإضافة للسلة المحسن",
+              "label_en": "Enable enhanced add-to-cart notice",
               "note": {
                 "ar": "إشعار يظهر عند إضافة منتج للسلة.",
                 "en": "A notice shown when a product is added to the cart."
@@ -3366,6 +3542,7 @@
           "settings": [
             {
               "label": "صورة جانبية للفوتر (اختياري)",
+              "label_en": "Footer side image (optional)",
               "note": {
                 "ar": "يفضّل صورة رأسية مثل 720 × 900.",
                 "en": "A portrait picture works best, such as 720 × 900."
@@ -3373,6 +3550,7 @@
             },
             {
               "label": "رابط الفيديو (يوتيوب أو ملف MP4)",
+              "label_en": "Video link (YouTube or MP4 file)",
               "note": {
                 "ar": "يحل الفيديو محل الصورة الجانبية وتصبح الصورة غلافه.",
                 "en": "The film replaces the side picture, which becomes its cover."
@@ -3380,6 +3558,7 @@
             },
             {
               "label": "تفعيل النشرة البريدية",
+              "label_en": "Enable newsletter",
               "note": {
                 "ar": "مع «نص النشرة».",
                 "en": "With its text."
@@ -3387,6 +3566,7 @@
             },
             {
               "label": "روابط العمود 1",
+              "label_en": "Column 1 links",
               "note": {
                 "ar": "أربعة أعمدة، لكل عمود عنوان وروابط و«إخفاء العمود 1»… ",
                 "en": "Four columns, each with a title, links and a hide switch."
@@ -3394,6 +3574,7 @@
             },
             {
               "label": "إظهار عمود «روابط مهمة» (صفحات المتجر التعريفية في سلة)",
+              "label_en": "Show «Important links» column (Salla store info pages)",
               "note": {
                 "ar": "يعرض صفحات متجرك التعريفية تلقائياً.",
                 "en": "Lists your store's information pages by itself."
@@ -3401,6 +3582,7 @@
             },
             {
               "label": "إنستغرام (رابط كامل)",
+              "label_en": "Instagram (full link)",
               "note": {
                 "ar": "ومثله تيك توك وإكس / تويتر وفيسبوك وسناب شات؛ اتركها فارغة لاستخدام حسابات المتجر في سلة.",
                 "en": "And TikTok, X / Twitter, Facebook, Snapchat; leave them empty to use the accounts registered in Salla."
@@ -3408,6 +3590,7 @@
             },
             {
               "label": "رقم الهاتف",
+              "label_en": "Phone number",
               "note": {
                 "ar": "مع «البريد الإلكتروني» و«العنوان (اختياري)».",
                 "en": "With email and an optional address."
@@ -3415,6 +3598,7 @@
             },
             {
               "label": "خط عناوين الأعمدة",
+              "label_en": "Column heading font",
               "note": {
                 "ar": "خط تحت العنوان، إطار حول العنوان، أو بدون.",
                 "en": "Under the heading, a frame around it, or none."
@@ -3422,6 +3606,7 @@
             },
             {
               "label": "إظهار اللغة والدولة/العملة في الفوتر",
+              "label_en": "Show language and country/currency in footer",
               "note": {
                 "ar": "مبدّل اللغة والدولة أسفل الفوتر.",
                 "en": "The language and country switcher at the bottom of the footer."
@@ -3494,6 +3679,7 @@
           "settings": [
             {
               "label": "زر واتساب",
+              "label_en": "WhatsApp button",
               "note": {
                 "ar": "مطفأ في البداية.",
                 "en": "Off by default."
@@ -3501,6 +3687,7 @@
             },
             {
               "label": "رقم واتساب (بصيغة دولية)",
+              "label_en": "WhatsApp number (international format)",
               "note": {
                 "ar": "مثل 9665XXXXXXXX؛ اتركه فارغاً لاستخدام رقم واتساب المتجر المسجّل في سلة.",
                 "en": "Such as 9665XXXXXXXX; leave it empty to use the store's WhatsApp number registered in Salla."
@@ -3508,6 +3695,7 @@
             },
             {
               "label": "رسالة جاهزة",
+              "label_en": "Preset message",
               "note": {
                 "ar": "نص يظهر في المحادثة عند فتحها.",
                 "en": "Text that fills the chat when it opens."
@@ -3515,6 +3703,7 @@
             },
             {
               "label": "زر العودة للأعلى",
+              "label_en": "Back to top button",
               "note": {
                 "ar": "يعيد الزائر لأعلى الصفحة.",
                 "en": "Takes the visitor back to the top of the page."
@@ -3522,6 +3711,7 @@
             },
             {
               "label": "مكان الأزرار",
+              "label_en": "Buttons position",
               "note": {
                 "ar": "الجهة الافتراضية أو الجهة المقابلة.",
                 "en": "The default side or the opposite side."

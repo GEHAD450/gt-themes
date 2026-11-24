@@ -205,7 +205,7 @@ function PostEditor({ hub, token, slug, taken, onClose }: { hub: Hub; token: str
           <Field label="ملخّص من جملتين (يظهر في صفحة المدونة وفي جوجل)" area value={post.summary.ar} onChange={(ar) => change({ ...post, summary: { ...post.summary, ar } })} />
           <div className="space-y-4">
             <Field label="التاريخ (سنة-شهر-يوم)" ltr value={post.date} onChange={(date) => change({ ...post, date: date.trim() })} />
-            <Field label="الوسوم (بينها فاصلة)" value={(post.tags ?? []).join('، ')} onChange={(tags) => change({ ...post, tags: tags.split(/[,،]/).map((tag) => tag.trimStart()) })} />
+            <Field label="الوسوم (بينها فاصلة — ولوسم جديد: عربي | English)" value={(post.tags ?? []).join('، ')} onChange={(tags) => change({ ...post, tags: tags.split(/[,،]/).map((tag) => tag.trimStart()) })} />
           </div>
         </div>
 

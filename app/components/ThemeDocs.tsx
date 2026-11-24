@@ -7,7 +7,7 @@ import type { DocSection, Profile, StoreEntry, Theme } from '@/lib/types';
 import { asset, countOf, pick, PLATFORMS, SECTIONS, whatsappLink } from '@/lib/site';
 import { Annotated, MarkerLegend } from './Annotated';
 import { WorkingHours } from './Hours';
-import { Shell, useLocale, WhatsAppIcon } from './Shell';
+import { Shell, useEnglishTitle, useLocale, WhatsAppIcon } from './Shell';
 
 /** A theme's guide: every section with its picture, what it is for and how to set it up. */
 export function ThemeDocs({ profile, theme, stores }: { profile: Profile; theme: Theme; stores: StoreEntry[] }) {
@@ -27,6 +27,7 @@ function Body({ profile, theme, stores }: { profile: Profile; theme: Theme; stor
   const isAr = locale === 'ar';
   const platform = PLATFORMS[theme.platform];
   const name = pick(theme.name, locale);
+  useEnglishTitle(`${pick(theme.name, 'en')} theme guide`);
   const Chevron = isAr ? ChevronLeft : ChevronRight;
   const [query, setQuery] = useState('');
   const [zoom, setZoom] = useState<{ src: string; alt: string } | null>(null);
@@ -42,7 +43,7 @@ function Body({ profile, theme, stores }: { profile: Profile; theme: Theme; stor
           pick(section.title, locale),
           pick(section.text, locale),
           ...((locale === 'en' ? section.steps?.en : section.steps?.ar) ?? section.steps?.ar ?? []),
-          ...(section.settings ?? []).flatMap((setting) => [setting.label, pick(setting.note, locale)]),
+          ...(section.settings ?? []).flatMap((setting) => [setting.label, setting.label_en ?? '', pick(setting.note, locale)]),
         ].join(' ')
       ).includes(words);
     return theme.groups.map((group) => ({ ...group, sections: group.sections.filter(holds) })).filter((group) => group.sections.length > 0);
@@ -470,7 +471,19 @@ function SectionNotes({ section }: { section: DocSection }) {
           <dl className="divide-y divide-white/10 overflow-hidden rounded-xl border border-white/10">
             {settings.map((setting, index) => (
               <div key={index} className="grid gap-1 bg-white/[0.02] px-4 py-3 sm:grid-cols-[minmax(0,13rem)_1fr] sm:gap-4">
-                <dt className="text-sm font-semibold text-white">{setting.label}</dt>
+                <dt className="text-sm font-semibold text-white">
+                  {locale === 'en' && setting.label_en ? (
+                    <>
+                      {setting.label_en}
+                      {/* the name as the Arabic editor shows it, to find the option on screen */}
+                      <span lang="ar" dir="rtl" className="mt-0.5 block text-left text-xs font-normal text-white/40">
+                        {setting.label}
+                      </span>
+                    </>
+                  ) : (
+                    setting.label
+                  )}
+                </dt>
                 <dd className="text-sm leading-relaxed text-white/60">{pick(setting.note, locale)}</dd>
               </div>
             ))}

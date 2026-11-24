@@ -10,7 +10,7 @@ import { iconOf } from '@/lib/icons';
 import { countOf, pick, PLATFORMS, THEMES, whatsappLink } from '@/lib/site';
 import { PostCardLink } from './BlogViews';
 import { useOpenNow, WorkingHours } from './Hours';
-import { Shell, useLocale, WhatsAppIcon } from './Shell';
+import { Shell, useEnglishTitle, useLocale, WhatsAppIcon } from './Shell';
 import { ThemeCardLink } from './ThemeCardLink';
 
 function Counter({ target, label }: { target: number; label: string }) {
@@ -88,6 +88,7 @@ export function HomeView({ profile, themes, posts }: { profile: Profile; themes:
 
 function HomeBody({ profile, themes, posts }: { profile: Profile; themes: ThemeCard[]; posts: PostCard[] }) {
   const { locale } = useLocale();
+  useEnglishTitle('Salla & Zid themes and store setup');
   const isAr = locale === 'ar';
   const Arrow = isAr ? ArrowLeft : ArrowRight;
   const whatsapp = whatsappLink(profile.whatsapp, pick(profile.whatsapp_message, locale));

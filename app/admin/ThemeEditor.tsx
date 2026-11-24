@@ -410,8 +410,9 @@ function SectionForm({
           {(section.settings ?? []).map((setting, index) => {
             const setSetting = (next: typeof setting) => onChange({ ...section, settings: (section.settings ?? []).map((item, at) => (at === index ? next : item)) });
             return (
-              <div key={index} className="grid gap-2 sm:grid-cols-[minmax(0,12rem)_1fr_1fr_auto]">
+              <div key={index} className="grid gap-2 sm:grid-cols-2 lg:grid-cols-[minmax(0,10rem)_minmax(0,10rem)_1fr_1fr_auto]">
                 <input className="field" placeholder="اسم الإعداد" value={setting.label} onChange={(event) => setSetting({ ...setting, label: event.target.value })} />
+                <input className="field" dir="ltr" placeholder="Its name in English" value={setting.label_en ?? ''} onChange={(event) => setSetting({ ...setting, label_en: event.target.value || undefined })} />
                 <input className="field" placeholder="ما الذي يفعله" value={setting.note?.ar ?? ''} onChange={(event) => setSetting({ ...setting, note: text(setting.note, { ar: event.target.value }) })} />
                 <input className="field" dir="ltr" placeholder="In English (optional)" value={setting.note?.en ?? ''} onChange={(event) => setSetting({ ...setting, note: text(setting.note, { en: event.target.value }) })} />
                 <button type="button" className="btn btn-danger px-3" aria-label="حذف الإعداد" onClick={() => onChange({ ...section, settings: (section.settings ?? []).filter((_, at) => at !== index) })}>

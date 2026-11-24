@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Mail, Menu, Phone, X } from 'lucide-react';
@@ -16,6 +16,20 @@ const LocaleContext = createContext<{ locale: Locale; setLocale: (next: Locale) 
 });
 
 export const useLocale = () => useContext(LocaleContext);
+
+/**
+ * The browser tab's title in English while the reader reads in English. The page is built
+ * with its Arabic title (the one search engines see); it comes back with Arabic.
+ */
+export function useEnglishTitle(title: string) {
+  const { locale } = useLocale();
+  const arabic = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (arabic.current === null) arabic.current = document.title;
+    document.title = locale === 'en' && title ? `${title} — GT-THEMES` : arabic.current;
+  }, [locale, title]);
+}
 
 const STORAGE_KEY = 'gt-locale';
 
