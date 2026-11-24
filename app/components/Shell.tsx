@@ -19,15 +19,29 @@ export const useLocale = () => useContext(LocaleContext);
 
 /**
  * The browser tab's title in English while the reader reads in English. The page is built
- * with its Arabic title (the one search engines see); it comes back with Arabic.
+ * with its Arabic title (the one search engines see), and React writes that title back
+ * whenever it tidies the page's head — so the English title is watched and put again.
+ * Back in Arabic, the built title returns.
  */
 export function useEnglishTitle(title: string) {
   const { locale } = useLocale();
   const arabic = useRef<string | null>(null);
 
   useEffect(() => {
-    if (arabic.current === null) arabic.current = document.title;
-    document.title = locale === 'en' && title ? `${title} — GT-THEMES` : arabic.current;
+    if (locale !== 'en' || !title) return;
+    const wanted = `${title} — GT-THEMES`;
+    // whatever title is there now is the built one: remember it for the way back
+    if (document.title !== wanted) arabic.current = document.title;
+    const apply = () => {
+      if (document.title !== wanted) document.title = wanted;
+    };
+    apply();
+    const watcher = new MutationObserver(apply);
+    watcher.observe(document.head, { subtree: true, childList: true, characterData: true });
+    return () => {
+      watcher.disconnect();
+      if (arabic.current !== null && document.title === wanted) document.title = arabic.current;
+    };
   }, [locale, title]);
 }
 

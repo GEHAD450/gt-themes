@@ -3598,7 +3598,7 @@
             },
             {
               "label": "خط عناوين الأعمدة",
-              "label_en": "Column heading font",
+              "label_en": "Column heading line",
               "note": {
                 "ar": "خط تحت العنوان، إطار حول العنوان، أو بدون.",
                 "en": "Under the heading, a frame around it, or none."

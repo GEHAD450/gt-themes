@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ltrSizesIn } from './site';
-import type { Platform, Post, Profile, StoreEntry, Theme } from './types';
+import type { Platform, Post, Profile, StoreEntry, Text, Theme } from './types';
 
 /**
  * The site's content, read from the `content/` folder when the site is built. Nothing is
@@ -42,6 +42,37 @@ function sizeOf(file: string | undefined): [number, number] | undefined {
   return undefined;
 }
 
+/**
+ * English texts quote an option by the name the Arabic editor shows («شكل الهيرو»), so the
+ * merchant finds it on screen. Where the guide knows the option's English name, it follows
+ * the quote — «شكل الهيرو» (Hero layout) — unless the writer already explained it in brackets.
+ */
+function glossed(theme: Theme): Theme {
+  const names = new Map<string, string>();
+  for (const group of theme.groups) {
+    for (const section of group.sections) {
+      for (const setting of section.settings ?? []) if (setting.label_en) names.set(setting.label, setting.label_en);
+    }
+  }
+  if (names.size === 0) return theme;
+  const gloss = (line: string): string => line.replace(/«([^«»]+)»(?!\s*\()/g, (quote, label: string) => (names.has(label) ? `${quote} (${names.get(label)})` : quote));
+  const english = <T extends Text | undefined>(value: T): T => (value?.en ? ({ ...value, en: gloss(value.en) } as T) : value);
+  return {
+    ...theme,
+    groups: theme.groups.map((group) => ({
+      ...group,
+      sections: group.sections.map((section) => ({
+        ...section,
+        text: english(section.text),
+        tip: english(section.tip),
+        steps: section.steps?.en ? { ...section.steps, en: section.steps.en.map(gloss) } : section.steps,
+        settings: section.settings?.map((setting) => ({ ...setting, note: english(setting.note) })),
+        markers: section.markers?.map((marker) => ({ ...marker, text: english(marker.text) })),
+      })),
+    })),
+  };
+}
+
 const sized = (theme: Theme): Theme => ({
   ...theme,
   cover_size: sizeOf(theme.cover),
@@ -65,7 +96,7 @@ export function getThemes(): Theme[] {
   const themes = fs
     .readdirSync(dir)
     .filter((name) => name.endsWith('.json'))
-    .map((name) => sized(read<Theme>(`themes/${name}`)));
+    .map((name) => sized(glossed(read<Theme>(`themes/${name}`))));
   const rank = (slug: string) => (ORDER.includes(slug) ? ORDER.indexOf(slug) : ORDER.length);
   return themes.sort((a, b) => rank(a.slug) - rank(b.slug) || a.slug.localeCompare(b.slug));
 }
