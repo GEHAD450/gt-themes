@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://gehad450.github.io/gt-themes/sitemap.xml
