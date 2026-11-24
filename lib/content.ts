@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { ltrSizesIn } from './site';
 import type { Platform, Post, Profile, StoreEntry, Theme } from './types';
 
 /**
@@ -9,7 +10,7 @@ import type { Platform, Post, Profile, StoreEntry, Theme } from './types';
  */
 const CONTENT = path.join(process.cwd(), 'content');
 
-const read = <T,>(file: string): T => JSON.parse(fs.readFileSync(path.join(CONTENT, file), 'utf8')) as T;
+const read = <T,>(file: string): T => ltrSizesIn(JSON.parse(fs.readFileSync(path.join(CONTENT, file), 'utf8')) as T);
 
 export const getProfile = (): Profile => read<Profile>('profile.json');
 

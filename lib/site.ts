@@ -16,6 +16,23 @@ export const asset = (file: string | undefined | null): string => {
   return `${BASE_PATH}${file.startsWith('/') ? '' : '/'}${file}`;
 };
 
+/**
+ * A size such as "1440×900" inside Arabic text: the two numbers are separate runs to the
+ * browser, so a right-to-left line shows them swapped — "900×1440", the wrong picture size.
+ * The size is wrapped in the invisible marks that keep it one left-to-right piece.
+ */
+// (the pattern uses no look-behind: iPhones before iOS 16.4 cannot read one, and the page's whole script would stop)
+export const ltrSizes = (text: string): string =>
+  text.replace(/(\u2066?)(\d[\d.,]*\s?×\s?\d[\d.,]*)/g, (whole, marked: string, size: string) => (marked ? whole : `\u2066${size}\u2069`));
+
+/** `ltrSizes` for every text of a content file. */
+export function ltrSizesIn<T>(value: T): T {
+  if (typeof value === 'string') return ltrSizes(value) as T;
+  if (Array.isArray(value)) return value.map((item) => ltrSizesIn(item)) as T;
+  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, ltrSizesIn(item)])) as T;
+  return value;
+}
+
 /** The text in the reader's language, Arabic when there is no translation. */
 export const pick = (text: Text | undefined | null, locale: Locale): string =>
   !text ? '' : (locale === 'en' ? text.en : text.ar) || text.ar || text.en || '';

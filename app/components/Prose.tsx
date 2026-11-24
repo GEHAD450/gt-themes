@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { asset } from '@/lib/site';
+import { asset, ltrSizes } from '@/lib/site';
 
 /**
  * An article's text. It is written with a few plain marks — no HTML, so nothing typed in the
@@ -63,7 +63,7 @@ function inline(text: string, at: string): ReactNode[] {
 const strip = (line: string, mark: RegExp) => line.replace(mark, '');
 
 export function Prose({ text, resolve }: { text: string; resolve?: (picture: string) => string }) {
-  const blocks = text
+  const blocks = ltrSizes(text)
     .replace(/\r\n/g, '\n')
     .split(/\n{2,}/)
     .map((block) => block.trim())

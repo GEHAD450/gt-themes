@@ -192,13 +192,13 @@ function HomeBody({ profile, themes, posts }: { profile: Profile; themes: ThemeC
               </code>
             </pre>
             <span className="floating-tag absolute -right-2 -top-3 rounded-full border border-brand-400/30 bg-[#0f0f19]/90 px-3.5 py-1.5 text-xs font-bold text-brand-200 backdrop-blur">
-              سلة
+              {pick(PLATFORMS.salla.name, locale)}
             </span>
             <span
               className="floating-tag absolute -bottom-3 left-6 rounded-full border border-brand-400/30 bg-[#0f0f19]/90 px-3.5 py-1.5 text-xs font-bold text-brand-200 backdrop-blur"
               style={{ animationDelay: '-2s' }}
             >
-              زد
+              {pick(PLATFORMS.zid.name, locale)}
             </span>
           </div>
         </div>

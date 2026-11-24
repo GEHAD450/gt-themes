@@ -91,10 +91,18 @@
               "اضغط «تخصيص» لفتح محرر الثيم.",
               "ابدأ بالإعدادات العامة (الألوان والخط) ثم الهيدر ثم أقسام الصفحة الرئيسية.",
               "احفظ وانشر، ثم افتح متجرك على الجوال والكمبيوتر للتأكد."
+            ],
+            "en": [
+              "In the dashboard, go to Online Store → Store design.",
+              "Pick the Abaq theme from your themes and activate it.",
+              "Click «تخصيص» (Customise) to open the theme editor.",
+              "Start with the global settings (colours and font), then the header, then the home-page sections.",
+              "Save and publish, then open your store on a phone and a computer to check it."
             ]
           },
           "tip": {
-            "ar": "ارفع شعارك وصور البانر الرئيسي أولاً، فهي أول ما يراه العميل."
+            "ar": "ارفع شعارك وصور البانر الرئيسي أولاً، فهي أول ما يراه العميل.",
+            "en": "Upload your logo and main banner pictures first: they are the first thing customers see."
           }
         },
         {
@@ -115,66 +123,83 @@
               "عدّل «نصف قطر الحواف» لحواف أنعم أو أحدّ.",
               "افتح مجموعة «الخط» واختر من «نوع الخط».",
               "احفظ وراجع التباين بين النص والخلفية."
+            ],
+            "en": [
+              "Open the customiser, then the global settings.",
+              "Open the «ألوان الثيم» (theme colours) group and change «اللون الأساسي» (primary colour), «خلفية الصفحة» (page background) and «لون النص» (text colour).",
+              "Adjust «نصف قطر الحواف» (corner radius) for softer or sharper corners.",
+              "Open the «الخط» (font) group and choose from «نوع الخط» (font type).",
+              "Save and check the contrast between text and background."
             ]
           },
           "settings": [
             {
               "label": "اللون الأساسي",
               "note": {
-                "ar": "لون الأزرار والعناصر البارزة (الافتراضي ذهبي)."
+                "ar": "لون الأزرار والعناصر البارزة (الافتراضي ذهبي).",
+                "en": "The colour of buttons and highlighted items (gold by default)."
               }
             },
             {
               "label": "نص اللون الأساسي",
               "note": {
-                "ar": "لون الكتابة فوق اللون الأساسي، مثل نص الأزرار."
+                "ar": "لون الكتابة فوق اللون الأساسي، مثل نص الأزرار.",
+                "en": "The colour of text placed on the primary colour, such as button text."
               }
             },
             {
               "label": "لون السطح",
               "note": {
-                "ar": "خلفية البطاقات والأسطح الثانوية."
+                "ar": "خلفية البطاقات والأسطح الثانوية.",
+                "en": "The background of cards and secondary areas."
               }
             },
             {
               "label": "خلفية الصفحة / لون النص / لون النص الثانوي",
               "note": {
-                "ar": "الألوان الأساسية للصفحة والكتابة."
+                "ar": "الألوان الأساسية للصفحة والكتابة.",
+                "en": "The main colours of the page and its text."
               }
             },
             {
               "label": "لون الحدود / لون حدود الإدخال / لون حلقة التركيز",
               "note": {
-                "ar": "الخطوط الفاصلة وحقول الإدخال وإطار التركيز عند التنقل بلوحة المفاتيح."
+                "ar": "الخطوط الفاصلة وحقول الإدخال وإطار التركيز عند التنقل بلوحة المفاتيح.",
+                "en": "Dividing lines, input fields and the focus outline shown when browsing with the keyboard."
               }
             },
             {
               "label": "نصف قطر الحواف",
               "note": {
-                "ar": "من 0 إلى 16 بكسل لاستدارة الحواف في الثيم."
+                "ar": "من 0 إلى 16 بكسل لاستدارة الحواف في الثيم.",
+                "en": "From 0 to 16 pixels: how rounded corners are across the theme."
               }
             },
             {
               "label": "لون دائرة عدد السلة / لون رقم عدد السلة",
               "note": {
-                "ar": "شارة عدد المنتجات على أيقونة السلة."
+                "ar": "شارة عدد المنتجات على أيقونة السلة.",
+                "en": "The badge showing the number of items on the cart icon."
               }
             },
             {
               "label": "تمرير انسيابي ناعم (سطح المكتب)",
               "note": {
-                "ar": "نزول ناعم بعجلة الماوس على الشاشات الكبيرة."
+                "ar": "نزول ناعم بعجلة الماوس على الشاشات الكبيرة.",
+                "en": "Smooth scrolling with the mouse wheel on large screens."
               }
             },
             {
               "label": "نوع الخط",
               "note": {
-                "ar": "IBM Arabic · Roboto · Cairo · Changa · Tajawal · Almarai · Amiri (الافتراضي) · Mada."
+                "ar": "IBM Arabic · Roboto · Cairo · Changa · Tajawal · Almarai · Amiri (الافتراضي) · Mada.",
+                "en": "IBM Arabic · Roboto · Cairo · Changa · Tajawal · Almarai · Amiri (default) · Mada."
               }
             }
           ],
           "tip": {
-            "ar": "تأكد دائماً من التباين: «لون النص» مختلف بوضوح عن «خلفية الصفحة»، و«نص اللون الأساسي» عن «اللون الأساسي». ولكل قسم ألوانه الخاصة؛ اتركها فارغة ليتبع ألوان الثيم."
+            "ar": "تأكد دائماً من التباين: «لون النص» مختلف بوضوح عن «خلفية الصفحة»، و«نص اللون الأساسي» عن «اللون الأساسي». ولكل قسم ألوانه الخاصة؛ اتركها فارغة ليتبع ألوان الثيم.",
+            "en": "Always check the contrast: «لون النص» (text colour) must stand out clearly from «خلفية الصفحة» (page background), and «نص اللون الأساسي» (text on primary colour) from «اللون الأساسي» (primary colour). Each section also has its own colours; leave them empty to follow the theme colours."
           },
           "markers": [
             {
@@ -221,54 +246,69 @@
               "ارفع صوراً خاصة لصفحة المنتج أو التصنيفات أو المدونة إن رغبت.",
               "اضبط «لون الطبقة» و«شفافية الطبقة» حتى يُقرأ العنوان بوضوح.",
               "حدّد «ارتفاع الترويسة» ثم احفظ."
+            ],
+            "en": [
+              "Open the global settings → «ترويسة الصفحات الداخلية» (inner page header).",
+              "Upload «الصورة الافتراضية للترويسة» (default header image).",
+              "If you like, upload separate pictures for the product page, the category pages or the blog.",
+              "Set «لون الطبقة» (overlay colour) and «شفافية الطبقة» (overlay opacity) so the title reads clearly.",
+              "Set «ارتفاع الترويسة» (header height), then save."
             ]
           },
           "settings": [
             {
               "label": "الصورة الافتراضية للترويسة",
               "note": {
-                "ar": "تظهر في أي صفحة داخلية ليس لها صورة خاصة."
+                "ar": "تظهر في أي صفحة داخلية ليس لها صورة خاصة.",
+                "en": "Shown on any inner page that has no picture of its own."
               }
             },
             {
               "label": "ترويسة صفحة كل المنتجات / ترويسة صفحة كل التصنيفات",
               "note": {
-                "ar": "صورة خاصة لكل من الصفحتين."
+                "ar": "صورة خاصة لكل من الصفحتين.",
+                "en": "A separate picture for each of these two pages."
               }
             },
             {
               "label": "ترويسة صفحات التصنيف (افتراضي)",
               "note": {
-                "ar": "لكل التصنيفات، أو ضع صورة للتصنيف نفسه من لوحة زد لتختلف الترويسة من تصنيف لآخر."
+                "ar": "لكل التصنيفات، أو ضع صورة للتصنيف نفسه من لوحة زد لتختلف الترويسة من تصنيف لآخر.",
+                "en": "For all categories; or add a picture to the category itself in the Zid dashboard so the header changes from one category to another."
               }
             },
             {
               "label": "ترويسة صفحة المنتج / ترويسة صفحات المحتوى (من نحن..) / ترويسة المدوّنة",
               "note": {
-                "ar": "صور خاصة لهذه الصفحات."
+                "ar": "صور خاصة لهذه الصفحات.",
+                "en": "Separate pictures for these pages."
               }
             },
             {
               "label": "لون الطبقة / شفافية الطبقة",
               "note": {
-                "ar": "طبقة لونية فوق الصورة لتوضيح النص."
+                "ar": "طبقة لونية فوق الصورة لتوضيح النص.",
+                "en": "A colour layer over the picture to make the text clearer."
               }
             },
             {
               "label": "إظهار عنوان الصفحة",
               "note": {
-                "ar": "إظهار عنوان الصفحة فوق الصورة أو إخفاؤه."
+                "ar": "إظهار عنوان الصفحة فوق الصورة أو إخفاؤه.",
+                "en": "Show or hide the page title over the picture."
               }
             },
             {
               "label": "ارتفاع الترويسة",
               "note": {
-                "ar": "من 120 إلى 380 بكسل."
+                "ar": "من 120 إلى 380 بكسل.",
+                "en": "From 120 to 380 pixels."
               }
             }
           ],
           "tip": {
-            "ar": "اختر صوراً هادئة قليلة التفاصيل، فالعنوان يُكتب فوقها."
+            "ar": "اختر صوراً هادئة قليلة التفاصيل، فالعنوان يُكتب فوقها.",
+            "en": "Choose calm pictures with little detail, since the title is written on top of them."
           },
           "image_mobile": "/docs/abaq/inner-page-header-m.webp",
           "markers": [
@@ -308,25 +348,35 @@
               "عند اختيار الصورة المخصّصة ارفعها في «صورة الخلفية المخصّصة».",
               "اضبط «شفافية الطبقة»؛ القيمة الأعلى تجعل الخلفية أخفت.",
               "احفظ."
+            ],
+            "en": [
+              "Open the global settings → «خلفية الصفحة الرئيسية» (home background).",
+              "In «وضع الخلفية» (background mode) choose: none, the default picture, or a custom picture.",
+              "If you choose the custom picture, upload it in «صورة الخلفية المخصّصة» (custom background image).",
+              "Set «شفافية الطبقة» (overlay opacity); a higher value makes the background fainter.",
+              "Save."
             ]
           },
           "settings": [
             {
               "label": "وضع الخلفية",
               "note": {
-                "ar": "بدون (إخفاء) · الصورة الافتراضية · صورة مخصّصة (رفع)."
+                "ar": "بدون (إخفاء) · الصورة الافتراضية · صورة مخصّصة (رفع).",
+                "en": "None (hidden) · default picture · custom picture (upload)."
               }
             },
             {
               "label": "صورة الخلفية المخصّصة",
               "note": {
-                "ar": "تُستخدم عند اختيار «صورة مخصّصة»."
+                "ar": "تُستخدم عند اختيار «صورة مخصّصة».",
+                "en": "Used when «صورة مخصّصة» (custom picture) is chosen."
               }
             },
             {
               "label": "لون الطبقة / شفافية الطبقة",
               "note": {
-                "ar": "تخفيف الصورة حتى لا تنافس محتوى الأقسام."
+                "ar": "تخفيف الصورة حتى لا تنافس محتوى الأقسام.",
+                "en": "Softens the picture so it doesn't compete with the sections' content."
               }
             }
           ]
@@ -348,37 +398,48 @@
               "فعّل «إظهار زر واتساب» واكتب الرقم بمفتاح الدولة دون + أو مسافات.",
               "اكتب رسالة مبدئية إن رغبت.",
               "اختر «موضع الأزرار» ثم احفظ."
+            ],
+            "en": [
+              "Open the global settings → «أزرار عائمة» (floating buttons).",
+              "Turn on «إظهار زر واتساب» (show WhatsApp button) and type the number with the country code, without + or spaces.",
+              "Write an opening message if you like.",
+              "Choose «موضع الأزرار» (buttons position), then save."
             ]
           },
           "settings": [
             {
               "label": "إظهار زر واتساب",
               "note": {
-                "ar": "يظهر زر المحادثة."
+                "ar": "يظهر زر المحادثة.",
+                "en": "Shows the chat button."
               }
             },
             {
               "label": "رقم واتساب",
               "note": {
-                "ar": "أرقام فقط بمفتاح الدولة، مثال: 9665XXXXXXXX."
+                "ar": "أرقام فقط بمفتاح الدولة، مثال: 9665XXXXXXXX.",
+                "en": "Digits only, with the country code, for example: 9665XXXXXXXX."
               }
             },
             {
               "label": "رسالة مبدئية (اختياري)",
               "note": {
-                "ar": "نص يُكتب تلقائياً في المحادثة."
+                "ar": "نص يُكتب تلقائياً في المحادثة.",
+                "en": "Text typed into the chat automatically."
               }
             },
             {
               "label": "إظهار زر العودة للأعلى",
               "note": {
-                "ar": "زر يرجع العميل إلى أعلى الصفحة."
+                "ar": "زر يرجع العميل إلى أعلى الصفحة.",
+                "en": "A button that takes the customer back to the top of the page."
               }
             },
             {
               "label": "موضع الأزرار",
               "note": {
-                "ar": "جهة النهاية (يسار في العربية) أو جهة البداية (يمين في العربية)."
+                "ar": "جهة النهاية (يسار في العربية) أو جهة البداية (يمين في العربية).",
+                "en": "The end side (left in Arabic) or the start side (right in Arabic)."
               }
             }
           ],
@@ -429,66 +490,83 @@
               "حدّد «موضع روابط القائمة» وفعّل «تثبيت الهيدر عند التمرير» إن رغبت.",
               "اضبط ألوان الخلفية والنص والخط السفلي والمسافات.",
               "احفظ وراجع الهيدر على الجوال."
+            ],
+            "en": [
+              "Open the customiser, then «أعلى الصفحة» (top of page) → «إعدادات الرأس» (header settings).",
+              "Choose «نمط قائمة التصنيفات» (categories menu style): an image mega menu or a dropdown list.",
+              "Set «موضع روابط القائمة» (menu links position) and turn on «تثبيت الهيدر عند التمرير» (sticky header) if you like.",
+              "Adjust the background, text and bottom-line colours and the spacing.",
+              "Save and check the header on a phone."
             ]
           },
           "settings": [
             {
               "label": "نمط قائمة التصنيفات",
               "note": {
-                "ar": "ميجا منيو (بالصور) أو قائمة منسدلة."
+                "ar": "ميجا منيو (بالصور) أو قائمة منسدلة.",
+                "en": "Mega menu (with pictures) or dropdown list."
               }
             },
             {
               "label": "كروت الميجا منيو",
               "note": {
-                "ar": "اختياري: كروت باسم ورابط وصورة (320×400 بكسل) تحلّ محل التصنيفات التلقائية."
+                "ar": "اختياري: كروت باسم ورابط وصورة (320×400 بكسل) تحلّ محل التصنيفات التلقائية.",
+                "en": "Optional: cards with a name, link and picture (320×400 pixels) that replace the automatic categories."
               }
             },
             {
               "label": "موضع روابط القائمة",
               "note": {
-                "ar": "البداية · الوسط · النهاية."
+                "ar": "البداية · الوسط · النهاية.",
+                "en": "Start · centre · end."
               }
             },
             {
               "label": "تثبيت الهيدر عند التمرير (Sticky)",
               "note": {
-                "ar": "يبقى الهيدر ظاهراً أثناء النزول في الصفحة."
+                "ar": "يبقى الهيدر ظاهراً أثناء النزول في الصفحة.",
+                "en": "The header stays visible as the customer scrolls down the page."
               }
             },
             {
               "label": "خلفية شفافة فوق البانر (تصبح صلبة عند التمرير)",
               "note": {
-                "ar": "يظهر الهيدر شفافاً فوق البانر الرئيسي."
+                "ar": "يظهر الهيدر شفافاً فوق البانر الرئيسي.",
+                "en": "The header appears transparent over the main banner."
               }
             },
             {
               "label": "لون خلفية الهيدر / لون النص والأيقونات",
               "note": {
-                "ar": "ألوان الهيدر."
+                "ar": "ألوان الهيدر.",
+                "en": "The header colours."
               }
             },
             {
               "label": "إظهار الخط السفلي / لون الخط السفلي / سُمك الخط السفلي",
               "note": {
-                "ar": "خط تحت الهيدر."
+                "ar": "خط تحت الهيدر.",
+                "en": "A line under the header."
               }
             },
             {
               "label": "المسافة العلوية والسفلية (سطح المكتب / جوال)",
               "note": {
-                "ar": "ارتفاع الهيدر على كل شاشة."
+                "ar": "ارتفاع الهيدر على كل شاشة.",
+                "en": "The header's height on each screen."
               }
             },
             {
               "label": "إخفاء اللغة / إخفاء اسم الدولة",
               "note": {
-                "ar": "إخفاء محدد اللغة أو اسم الدولة من الهيدر."
+                "ar": "إخفاء محدد اللغة أو اسم الدولة من الهيدر.",
+                "en": "Hide the language switcher or the country name from the header."
               }
             }
           ],
           "tip": {
-            "ar": "في الميجا منيو استخدم صوراً طولية متقاربة الألوان لتبدو القائمة مرتبة."
+            "ar": "في الميجا منيو استخدم صوراً طولية متقاربة الألوان لتبدو القائمة مرتبة.",
+            "en": "In the mega menu, use portrait pictures with similar colours so the menu looks tidy."
           },
           "image_mobile": "/docs/abaq/header-m.webp",
           "markers": [
@@ -543,36 +621,47 @@
               "ارفع «الشعار (عربي — سطح المكتب)» بمقاس 200×80 بكسل و«الشعار (عربي — جوال)» بمقاس 150×60.",
               "ارفع النسختين الإنجليزيتين إن كان متجرك بلغتين.",
               "اختر «موضع الشعار» واضبط «أقصى ارتفاع للشعار (سطح المكتب)» ثم احفظ."
+            ],
+            "en": [
+              "Open «أعلى الصفحة» (top of page) → «الشعار» (logo).",
+              "Upload «الشعار (عربي — سطح المكتب)» (Arabic logo, desktop) at 200×80 pixels and «الشعار (عربي — جوال)» (Arabic logo, mobile) at 150×60.",
+              "Upload the two English versions if your store has two languages.",
+              "Choose «موضع الشعار» (logo position), set «أقصى ارتفاع للشعار (سطح المكتب)» (maximum logo height, desktop), then save."
             ]
           },
           "settings": [
             {
               "label": "موضع الشعار",
               "note": {
-                "ar": "البداية · الوسط · النهاية."
+                "ar": "البداية · الوسط · النهاية.",
+                "en": "Start · centre · end."
               }
             },
             {
               "label": "الشعار (عربي — سطح المكتب) / الشعار (عربي — جوال)",
               "note": {
-                "ar": "200×80 و150×60 بكسل (اختياري)."
+                "ar": "200×80 و150×60 بكسل (اختياري).",
+                "en": "200×80 and 150×60 pixels (optional)."
               }
             },
             {
               "label": "الشعار (إنجليزي — سطح المكتب) / الشعار (إنجليزي — جوال)",
               "note": {
-                "ar": "يظهر عند اختيار اللغة الإنجليزية."
+                "ar": "يظهر عند اختيار اللغة الإنجليزية.",
+                "en": "Shown when the English language is selected."
               }
             },
             {
               "label": "أقصى ارتفاع للشعار (سطح المكتب)",
               "note": {
-                "ar": "من 28 إلى 100 بكسل."
+                "ar": "من 28 إلى 100 بكسل.",
+                "en": "From 28 to 100 pixels."
               }
             }
           ],
           "tip": {
-            "ar": "استخدم شعاراً بخلفية شفافة (PNG) ولون فاتح يظهر فوق الهيدر الداكن."
+            "ar": "استخدم شعاراً بخلفية شفافة (PNG) ولون فاتح يظهر فوق الهيدر الداكن.",
+            "en": "Use a logo with a transparent background (PNG) in a light colour that shows on the dark header."
           },
           "image_mobile": "/docs/abaq/logo-m.webp",
           "markers": [
@@ -612,43 +701,56 @@
               "أضف عناصر في «النصوص»، لكل نص أيقونة أو رمز تعبيري اختياري.",
               "فعّل «تفعيل التمرير المتحرك» واضبط «سرعة التمرير».",
               "اختر أين يظهر من «عرض شريط الإعلانات في» ثم احفظ."
+            ],
+            "en": [
+              "Open «أعلى الصفحة» (top of page) → «شريط الإعلانات» (announcement bar).",
+              "Turn on «إظهار شريط الإعلانات» (show announcement bar).",
+              "Add items under «النصوص» (texts); each text can have an optional icon or emoji.",
+              "Turn on «تفعيل التمرير المتحرك» (enable scrolling) and set «سرعة التمرير» (scroll speed).",
+              "Choose where it appears in «عرض شريط الإعلانات في» (show announcement bar on), then save."
             ]
           },
           "settings": [
             {
               "label": "إظهار شريط الإعلانات",
               "note": {
-                "ar": "تشغيل الشريط أو إيقافه."
+                "ar": "تشغيل الشريط أو إيقافه.",
+                "en": "Turns the bar on or off."
               }
             },
             {
               "label": "لون خلفية الشريط / لون نص الشريط",
               "note": {
-                "ar": "ألوان الشريط."
+                "ar": "ألوان الشريط.",
+                "en": "The bar's colours."
               }
             },
             {
               "label": "تفعيل التمرير المتحرك / سرعة التمرير",
               "note": {
-                "ar": "حركة النصوص ومدة الدورة بالثواني."
+                "ar": "حركة النصوص ومدة الدورة بالثواني.",
+                "en": "Text movement and the length of one loop in seconds."
               }
             },
             {
               "label": "النصوص",
               "note": {
-                "ar": "قائمة النصوص، ولكل نص رمز اختياري مثل ✨ 🚚 🎁."
+                "ar": "قائمة النصوص، ولكل نص رمز اختياري مثل ✨ 🚚 🎁.",
+                "en": "The list of texts; each text can have an optional symbol such as ✨ 🚚 🎁."
               }
             },
             {
               "label": "الرابط",
               "note": {
-                "ar": "رابط يُفتح عند الضغط على الشريط."
+                "ar": "رابط يُفتح عند الضغط على الشريط.",
+                "en": "A link that opens when the bar is clicked."
               }
             },
             {
               "label": "عرض شريط الإعلانات في",
               "note": {
-                "ar": "جميع الصفحات أو الصفحة الرئيسية فقط."
+                "ar": "جميع الصفحات أو الصفحة الرئيسية فقط.",
+                "en": "All pages or the home page only."
               }
             }
           ],
@@ -700,72 +802,90 @@
               "للشرائح: أضف شرائح في «شرائح العرض» (حتى 6)، ولكل شريحة صورتها ونصوصها وزرها.",
               "اختر وجهة الزر من «نوع الرابط»: تصنيف أو منتج أو صفحة أو رابط مخصص.",
               "اختر «نمط الانتقال بين الشرائح» و«حركة ظهور النص» ثم احفظ."
+            ],
+            "en": [
+              "Add the «البانر الرئيسي» (hero banner) section at the top of the home page.",
+              "Choose «نوع الوسائط» (media type): a single image, multiple slides or a video.",
+              "For slides: add slides under «شرائح العرض» (slides), up to 6, each with its own picture, texts and button.",
+              "Choose where the button goes in «نوع الرابط» (link type): a category, product, page or custom link.",
+              "Choose «نمط الانتقال بين الشرائح» (slide transition style) and «حركة ظهور النص» (text reveal animation), then save."
             ]
           },
           "settings": [
             {
               "label": "نوع الوسائط",
               "note": {
-                "ar": "تلقائي (فيديو ثم شرائح ثم صورة) · فيديو · شرائح متعددة · صورة واحدة."
+                "ar": "تلقائي (فيديو ثم شرائح ثم صورة) · فيديو · شرائح متعددة · صورة واحدة.",
+                "en": "Automatic (video, then slides, then image) · video · multiple slides · single image."
               }
             },
             {
               "label": "شرائح العرض",
               "note": {
-                "ar": "صورة سطح المكتب 1920×1080 والجوال 800×1000 بكسل، وشارة وعنوان ووصف وزر لكل شريحة، ويمكن تحويل الشريحة إلى فيديو MP4."
+                "ar": "صورة سطح المكتب 1920×1080 والجوال 800×1000 بكسل، وشارة وعنوان ووصف وزر لكل شريحة، ويمكن تحويل الشريحة إلى فيديو MP4.",
+                "en": "Desktop picture 1920×1080 and phone picture 800×1000 pixels, with a badge, heading, description and button for each slide; a slide can also be turned into an MP4 video."
               }
             },
             {
               "label": "نمط الانتقال بين الشرائح",
               "note": {
-                "ar": "مسح ضوئي ذهبي · فتحة العدسة · دفع جانبي · مشربية."
+                "ar": "مسح ضوئي ذهبي · فتحة العدسة · دفع جانبي · مشربية.",
+                "en": "Golden light sweep · lens aperture · side push · mashrabiya."
               }
             },
             {
               "label": "تكبير بطيء (كين بيرنز)",
               "note": {
-                "ar": "تكبير هادئ للصورة أثناء عرضها."
+                "ar": "تكبير هادئ للصورة أثناء عرضها.",
+                "en": "A gentle zoom on the picture while it is shown."
               }
             },
             {
               "label": "تشغيل تلقائي / مدة عرض الشريحة",
               "note": {
-                "ar": "تنقل تلقائي بين الشرائح من 3 إلى 12 ثانية."
+                "ar": "تنقل تلقائي بين الشرائح من 3 إلى 12 ثانية.",
+                "en": "Moves through the slides automatically, every 3 to 12 seconds."
               }
             },
             {
               "label": "أسهم التنقل / نقاط التنقل / شريط التقدم الذهبي",
               "note": {
-                "ar": "أدوات التنقل الظاهرة على البانر."
+                "ar": "أدوات التنقل الظاهرة على البانر.",
+                "en": "The navigation controls shown on the banner."
               }
             },
             {
               "label": "حركة ظهور النص",
               "note": {
-                "ar": "متنوّع ناعم · صعود متتابع · وضوح تدريجي · كشف قصّي · كلمة بكلمة · بدون."
+                "ar": "متنوّع ناعم · صعود متتابع · وضوح تدريجي · كشف قصّي · كلمة بكلمة · بدون.",
+                "en": "Soft mix · staggered rise · gradual focus · clip reveal · word by word · none."
               }
             },
             {
               "label": "فيديو من جهازك / رابط الفيديو (سطح المكتب) — MP4",
               "note": {
-                "ar": "فيديو خلفية يعمل تلقائياً، وله الأولوية على الصور، مع نسخة أخف للجوال اختيارية."
+                "ar": "فيديو خلفية يعمل تلقائياً، وله الأولوية على الصور، مع نسخة أخف للجوال اختيارية.",
+                "en": "A background video that plays automatically and takes priority over the pictures, with an optional lighter version for phones."
               }
             },
             {
               "label": "شفافية الطبقة / لون الطبقة فوق الخلفية",
               "note": {
-                "ar": "تغميق الصورة لتوضيح النص."
+                "ar": "تغميق الصورة لتوضيح النص.",
+                "en": "Darkens the picture to make the text clearer."
               }
             },
             {
               "label": "الحد الأدنى للارتفاع (موبايل / سطح المكتب)",
               "note": {
-                "ar": "من 400 إلى 900 بكسل."
+                "ar": "من 400 إلى 900 بكسل.",
+                "en": "From 400 to 900 pixels."
               }
             }
           ],
           "tip": {
-            "ar": "اترك «البانر الرئيسي» (H1) مفعّلاً لبانر واحد فقط في الصفحة، وارفع صورة جوال طولية حتى لا يُقص المنتج."
+            "ar": "اترك «البانر الرئيسي» (H1) مفعّلاً لبانر واحد فقط في الصفحة، وارفع صورة جوال طولية حتى لا يُقص المنتج.",
+            "en": "Keep «البانر الرئيسي» (main banner, H1) turned on for one banner only on the page, and upload a portrait phone picture so the product isn't cropped."
           },
           "markers": [
             {
@@ -811,48 +931,61 @@
               "أضف شرائح في «الشرائح» وارفع صورة سطح المكتب (1500×700) وصورة الموبايل (414×700).",
               "اكتب الشارة والعنوان والوصف ونص الزر ورابطه.",
               "اختر «تأثير الانتقال» واضبط التشغيل التلقائي ثم احفظ."
+            ],
+            "en": [
+              "Add the «دوّار الصور» (image carousel) section.",
+              "Add slides under «الشرائح» (slides) and upload a desktop picture (1500×700) and a mobile picture (414×700).",
+              "Write the badge, heading, description, button text and button link.",
+              "Choose «تأثير الانتقال» (transition effect), set autoplay, then save."
             ]
           },
           "settings": [
             {
               "label": "نمط العرض",
               "note": {
-                "ar": "افتراضي أو مضغوط."
+                "ar": "افتراضي أو مضغوط.",
+                "en": "Default or compact."
               }
             },
             {
               "label": "تأثير الانتقال",
               "note": {
-                "ar": "تلاشي أو انزلاق."
+                "ar": "تلاشي أو انزلاق.",
+                "en": "Fade or slide."
               }
             },
             {
               "label": "تشغيل تلقائي / تأخير التشغيل التلقائي",
               "note": {
-                "ar": "من 2 إلى 8 ثوانٍ بين الشرائح."
+                "ar": "من 2 إلى 8 ثوانٍ بين الشرائح.",
+                "en": "From 2 to 8 seconds between slides."
               }
             },
             {
               "label": "إظهار النقاط",
               "note": {
-                "ar": "نقاط التنقل أسفل الشرائح."
+                "ar": "نقاط التنقل أسفل الشرائح.",
+                "en": "Navigation dots below the slides."
               }
             },
             {
               "label": "موضع الخلفية / شفافية الطبقة / محاذاة النص",
               "note": {
-                "ar": "لكل شريحة على حدة."
+                "ar": "لكل شريحة على حدة.",
+                "en": "Set separately for each slide."
               }
             },
             {
               "label": "الحد الأدنى للارتفاع (موبايل / سطح المكتب)",
               "note": {
-                "ar": "من 400 إلى 900 بكسل."
+                "ar": "من 400 إلى 900 بكسل.",
+                "en": "From 400 to 900 pixels."
               }
             }
           ],
           "tip": {
-            "ar": "المعاينة من نموذج زد الأصلي؛ يأخذ القسم في متجرك ألوان عبق وخطه."
+            "ar": "المعاينة من نموذج زد الأصلي؛ يأخذ القسم في متجرك ألوان عبق وخطه.",
+            "en": "The preview picture comes from Zid's original template; in your store the section takes Abaq's colours and font."
           }
         },
         {
@@ -872,48 +1005,61 @@
               "أضف «العناصر» (حتى 12)، واكتب النص واختر الأيقونة لكل عنصر.",
               "اختر «الفاصل» بين العناصر واضبط «حجم الخط».",
               "اضبط «مدة الدورة» و«الاتجاه» والألوان ثم احفظ."
+            ],
+            "en": [
+              "Add the «شريط متحرك» (marquee) section, ideally right under the banner.",
+              "Add «العناصر» (items), up to 12, and write the text and choose the icon for each item.",
+              "Choose «الفاصل» (separator) between items and set «حجم الخط» (font size).",
+              "Set «مدة الدورة» (loop duration), «الاتجاه» (direction) and the colours, then save."
             ]
           },
           "settings": [
             {
               "label": "العناصر",
               "note": {
-                "ar": "نص وأيقونة: شحن · إرجاع · دفع آمن · هدية · تألّق · طبيعي · قطرة عطر · بدون."
+                "ar": "نص وأيقونة: شحن · إرجاع · دفع آمن · هدية · تألّق · طبيعي · قطرة عطر · بدون.",
+                "en": "Text and icon: shipping · returns · secure payment · gift · sparkle · natural · perfume drop · none."
               }
             },
             {
               "label": "الفاصل",
               "note": {
-                "ar": "نقطة • · شرطة / · نجمة ✳ · معيّن ◆ · بدون."
+                "ar": "نقطة • · شرطة / · نجمة ✳ · معيّن ◆ · بدون.",
+                "en": "Dot • · slash / · star ✳ · diamond ◆ · none."
               }
             },
             {
               "label": "حجم الخط",
               "note": {
-                "ar": "من 12 إلى 28 بكسل."
+                "ar": "من 12 إلى 28 بكسل.",
+                "en": "From 12 to 28 pixels."
               }
             },
             {
               "label": "أحرف كبيرة (للإنجليزية)",
               "note": {
-                "ar": "يكتب النص الإنجليزي بأحرف كبيرة."
+                "ar": "يكتب النص الإنجليزي بأحرف كبيرة.",
+                "en": "Writes English text in capital letters."
               }
             },
             {
               "label": "مدة الدورة (أبطأ = أكبر) / الاتجاه",
               "note": {
-                "ar": "سرعة الحركة واتجاهها."
+                "ar": "سرعة الحركة واتجاهها.",
+                "en": "The speed and direction of the movement."
               }
             },
             {
               "label": "لون الخلفية / لون النص / لون الأيقونات والفواصل",
               "note": {
-                "ar": "ألوان الشريط."
+                "ar": "ألوان الشريط.",
+                "en": "The band's colours."
               }
             }
           ],
           "tip": {
-            "ar": "اجعل كل رسالة من 3 إلى 5 كلمات؛ الرسائل الطويلة يصعب قراءتها وهي تتحرك."
+            "ar": "اجعل كل رسالة من 3 إلى 5 كلمات؛ الرسائل الطويلة يصعب قراءتها وهي تتحرك.",
+            "en": "Keep each message to 3 to 5 words; long messages are hard to read while they move."
           },
           "image_mobile": "/docs/abaq/marquee-m.webp",
           "markers": [
@@ -953,48 +1099,61 @@
               "اكتب «الرقم الترتيبي» و«نص علوي» و«العنوان» و«الوصف».",
               "أضف حتى 8 تصنيفات من «التصنيفات» واختر كل تصنيف من القائمة.",
               "اختر «موضع الصورة» و«نسبة الصورة» ثم احفظ."
+            ],
+            "en": [
+              "Add the «التصنيفات» (categories) section.",
+              "Write «الرقم الترتيبي» (order number), «نص علوي» (eyebrow text), «العنوان» (heading) and «الوصف» (description).",
+              "Add up to 8 categories under «التصنيفات» (categories) and pick each category from the list.",
+              "Choose «موضع الصورة» (image position) and «نسبة الصورة» (image ratio), then save."
             ]
           },
           "settings": [
             {
               "label": "التصنيفات",
               "note": {
-                "ar": "حتى 8 تصنيفات، ولكل تصنيف «وصف مختصر» اختياري؛ إن تُرك يظهر عدد المنتجات."
+                "ar": "حتى 8 تصنيفات، ولكل تصنيف «وصف مختصر» اختياري؛ إن تُرك يظهر عدد المنتجات.",
+                "en": "Up to 8 categories, each with an optional «وصف مختصر» (short description); if left empty, the number of products is shown."
               }
             },
             {
               "label": "موضع الصورة / نسبة الصورة",
               "note": {
-                "ar": "البداية أو النهاية؛ طولية أو عرضية أو مربعة."
+                "ar": "البداية أو النهاية؛ طولية أو عرضية أو مربعة.",
+                "en": "Start or end; portrait, landscape or square."
               }
             },
             {
               "label": "تثبيت الصورة أثناء التمرير",
               "note": {
-                "ar": "على الشاشات الكبيرة تبقى الصورة ثابتة وتتحرك القائمة بجانبها."
+                "ar": "على الشاشات الكبيرة تبقى الصورة ثابتة وتتحرك القائمة بجانبها.",
+                "en": "On large screens the picture stays fixed while the list moves beside it."
               }
             },
             {
               "label": "توهّج ذهبي على الصورة النشطة / تكبير بطيء (كين بيرنز)",
               "note": {
-                "ar": "تأثيرات على الصورة."
+                "ar": "تأثيرات على الصورة.",
+                "en": "Effects on the picture."
               }
             },
             {
               "label": "عرض زر «كل التصنيفات» على الصورة / نص زر كل التصنيفات",
               "note": {
-                "ar": "زر يفتح صفحة كل التصنيفات."
+                "ar": "زر يفتح صفحة كل التصنيفات.",
+                "en": "A button that opens the all-categories page."
               }
             },
             {
               "label": "لون خلفية القسم / لون النص / لون العنوان / لون التمييز",
               "note": {
-                "ar": "ألوان القسم؛ لون التمييز للأرقام والأسهم."
+                "ar": "ألوان القسم؛ لون التمييز للأرقام والأسهم.",
+                "en": "The section's colours; the accent colour is used for the numbers and arrows."
               }
             }
           ],
           "tip": {
-            "ar": "الصورة التي تظهر هي صورة التصنيف في زد، فارفع لكل تصنيف صورة واضحة من لوحة التحكم."
+            "ar": "الصورة التي تظهر هي صورة التصنيف في زد، فارفع لكل تصنيف صورة واضحة من لوحة التحكم.",
+            "en": "The picture shown is the category's picture in Zid, so upload a clear picture for each category from the dashboard."
           },
           "markers": [
             {
@@ -1042,66 +1201,83 @@
               "اختر المنتجات من «اختر المنتجات».",
               "اختر «نوع العرض»: كاروسيل أو شبكة.",
               "اضبط زر «عرض الكل» وألوان البطاقة ثم احفظ."
+            ],
+            "en": [
+              "Add the «المنتجات» (products) section.",
+              "Write «نص علوي» (eyebrow text), «العنوان» (heading) and «الوصف» (description).",
+              "Pick the products in «اختر المنتجات» (choose products).",
+              "Choose «نوع العرض» (display type): carousel or grid.",
+              "Set up the «عرض الكل» (view all) button and the card colours, then save."
             ]
           },
           "settings": [
             {
               "label": "اختر المنتجات",
               "note": {
-                "ar": "المنتجات التي تظهر في القسم."
+                "ar": "المنتجات التي تظهر في القسم.",
+                "en": "The products shown in the section."
               }
             },
             {
               "label": "تخطّي أول (عدد منتجات) / عدد المنتجات المعروضة",
               "note": {
-                "ar": "لعرض منتجات مختلفة في قسمين من المصدر نفسه؛ 0 = عرض الكل."
+                "ar": "لعرض منتجات مختلفة في قسمين من المصدر نفسه؛ 0 = عرض الكل.",
+                "en": "To show different products in two sections from the same source; 0 = show all."
               }
             },
             {
               "label": "نوع العرض",
               "note": {
-                "ar": "كاروسيل أو شبكة."
+                "ar": "كاروسيل أو شبكة.",
+                "en": "Carousel or grid."
               }
             },
             {
               "label": "نسبة صورة المنتج",
               "note": {
-                "ar": "طولية · ممدودة · مربعة."
+                "ar": "طولية · ممدودة · مربعة.",
+                "en": "Portrait · tall · square."
               }
             },
             {
               "label": "تأثير المرور على البطاقة",
               "note": {
-                "ar": "تبديل إلى الصورة الثانية للمنتج، أو بدون."
+                "ar": "تبديل إلى الصورة الثانية للمنتج، أو بدون.",
+                "en": "Swap to the product's second picture, or none."
               }
             },
             {
               "label": "إظهار زر الإضافة السريعة",
               "note": {
-                "ar": "زر يضيف للسلة، أو يفتح العرض السريع إن كان للمنتج خيارات."
+                "ar": "زر يضيف للسلة، أو يفتح العرض السريع إن كان للمنتج خيارات.",
+                "en": "A button that adds to the cart, or opens the quick view if the product has options."
               }
             },
             {
               "label": "عرض زر المزيد / نص زر المزيد",
               "note": {
-                "ar": "زر لعرض كل المنتجات."
+                "ar": "زر لعرض كل المنتجات.",
+                "en": "A button to view all products."
               }
             },
             {
               "label": "خلفية معلومات البطاقة / لون خلفية المعلومات / شفافية خلفية المعلومات",
               "note": {
-                "ar": "تدرّج أو لون صلب خلف اسم المنتج وسعره."
+                "ar": "تدرّج أو لون صلب خلف اسم المنتج وسعره.",
+                "en": "A gradient or a solid colour behind the product's name and price."
               }
             },
             {
               "label": "لون اسم المنتج / لون السعر / لون السعر القديم",
               "note": {
-                "ar": "ألوان نصوص البطاقة."
+                "ar": "ألوان نصوص البطاقة.",
+                "en": "The colours of the card's texts."
               }
             }
           ],
           "tip": {
-            "ar": "ارفع صورتين على الأقل لكل منتج حتى يعمل تبديل الصورة عند المرور."
+            "ar": "ارفع صورتين على الأقل لكل منتج حتى يعمل تبديل الصورة عند المرور.",
+            "en": "Upload at least two pictures for each product so the picture swap on hover works."
           },
           "markers": [
             {
@@ -1157,48 +1333,62 @@
               "داخل كل صورة أضف «نقاط المنتجات» (حتى 8) واختر المنتج لكل نقطة.",
               "حرّك النقطة فوق المنتج في الصورة بـ«الموضع الأفقي» و«الموضع الرأسي».",
               "اختر «حركة زر الإضافة عند المرور» ثم احفظ."
+            ],
+            "en": [
+              "Add the «تسوّق الإطلالة» (shop the look) section.",
+              "Add one or two pictures under «الصور (١ أو ٢)» (images, 1 or 2).",
+              "Inside each picture, add «نقاط المنتجات» (product dots), up to 8, and pick the product for each dot.",
+              "Move the dot onto the product in the picture with «الموضع الأفقي» (horizontal position) and «الموضع الرأسي» (vertical position).",
+              "Choose «حركة زر الإضافة عند المرور» (add button hover effect), then save."
             ]
           },
           "settings": [
             {
               "label": "الصور (١ أو ٢)",
               "note": {
-                "ar": "لكل صورة حتى 8 نقاط منتجات."
+                "ar": "لكل صورة حتى 8 نقاط منتجات.",
+                "en": "Up to 8 product dots for each picture."
               }
             },
             {
               "label": "الموضع الأفقي / الموضع الرأسي",
               "note": {
-                "ar": "مكان النقطة على الصورة بالنسبة المئوية."
+                "ar": "مكان النقطة على الصورة بالنسبة المئوية.",
+                "en": "Where the dot sits on the picture, as a percentage."
               }
             },
             {
               "label": "تأثير الزوم على الصورة",
               "note": {
-                "ar": "تكبير خفيف للصورة."
+                "ar": "تكبير خفيف للصورة.",
+                "en": "A slight zoom on the picture."
               }
             },
             {
               "label": "لون التمييز (النقاط)",
               "note": {
-                "ar": "لون النقاط."
+                "ar": "لون النقاط.",
+                "en": "The colour of the dots."
               }
             },
             {
               "label": "لون خلفية زر الإضافة / لون نص زر الإضافة",
               "note": {
-                "ar": "ألوان زر الإضافة في النافذة."
+                "ar": "ألوان زر الإضافة في النافذة.",
+                "en": "The colours of the add button in the product card."
               }
             },
             {
               "label": "حركة زر الإضافة عند المرور",
               "note": {
-                "ar": "لمعان · تعبئة · رفع."
+                "ar": "لمعان · تعبئة · رفع.",
+                "en": "Shine · fill · lift."
               }
             }
           ],
           "tip": {
-            "ar": "افتح المعاينة بعد وضع كل نقطة، وتأكد أنها فوق المنتج نفسه على الجوال أيضاً."
+            "ar": "افتح المعاينة بعد وضع كل نقطة، وتأكد أنها فوق المنتج نفسه على الجوال أيضاً.",
+            "en": "Open the preview after placing each dot, and make sure it sits on the product itself on phones too."
           },
           "markers": [
             {
@@ -1245,43 +1435,55 @@
               "أضف «الشرائح (كل صورة برابط)» حتى 16 شريحة.",
               "لكل شريحة: ارفع الصورة واكتب تعليقاً واختر وجهة الرابط.",
               "حدّد «عدد الصور (ديسكتوب)» و«عدد الصور (موبايل)» و«نسبة الصورة» ثم احفظ."
+            ],
+            "en": [
+              "Add the «سلايدر صور» (image slider) section.",
+              "Add «الشرائح (كل صورة برابط)» (slides, each image with a link), up to 16 slides.",
+              "For each slide: upload the picture, write a caption and choose where the link goes.",
+              "Set «عدد الصور (ديسكتوب)» (images per view, desktop), «عدد الصور (موبايل)» (images per view, mobile) and «نسبة الصورة» (image ratio), then save."
             ]
           },
           "settings": [
             {
               "label": "نوع الوسائط",
               "note": {
-                "ar": "صورة أو فيديو لكل شريحة؛ الفيديو يُرفع MP4 أو يُلصق رابط YouTube / MP4."
+                "ar": "صورة أو فيديو لكل شريحة؛ الفيديو يُرفع MP4 أو يُلصق رابط YouTube / MP4.",
+                "en": "A picture or a video for each slide; upload the video as MP4 or paste a YouTube / MP4 link."
               }
             },
             {
               "label": "نوع الرابط",
               "note": {
-                "ar": "رابط مخصص · تصنيف · منتج · صفحة."
+                "ar": "رابط مخصص · تصنيف · منتج · صفحة.",
+                "en": "Custom link · category · product · page."
               }
             },
             {
               "label": "عدد الصور (ديسكتوب) / عدد الصور (موبايل)",
               "note": {
-                "ar": "من 1 إلى 5 على الكمبيوتر، ومن 1 إلى 3 على الجوال."
+                "ar": "من 1 إلى 5 على الكمبيوتر، ومن 1 إلى 3 على الجوال.",
+                "en": "From 1 to 5 on a computer, and from 1 to 3 on a phone."
               }
             },
             {
               "label": "نسبة الصورة",
               "note": {
-                "ar": "عرضية · مربعة · طولية · عريضة."
+                "ar": "عرضية · مربعة · طولية · عريضة.",
+                "en": "Landscape · square · portrait · wide."
               }
             },
             {
               "label": "السحب بالماوس / إظهار النقاط",
               "note": {
-                "ar": "طرق التنقل بين الصور."
+                "ar": "طرق التنقل بين الصور.",
+                "en": "Ways to move between the pictures."
               }
             },
             {
               "label": "تشغيل تلقائي / مدة التشغيل التلقائي",
               "note": {
-                "ar": "من 2 إلى 10 ثوانٍ."
+                "ar": "من 2 إلى 10 ثوانٍ.",
+                "en": "From 2 to 10 seconds."
               }
             }
           ],
@@ -1338,25 +1540,34 @@
               "ارفع «صورة «قبل»» و«صورة «بعد»» بنفس المقاس.",
               "اكتب «تسمية «قبل»» و«تسمية «بعد»».",
               "اختر «نسبة الصورة» و«موضع المؤشّر الابتدائي» ثم احفظ."
+            ],
+            "en": [
+              "Add the «قبل / بعد» (before / after) section.",
+              "Upload «صورة «قبل»» (before image) and «صورة «بعد»» (after image) at the same size.",
+              "Write «تسمية «قبل»» (before label) and «تسمية «بعد»» (after label).",
+              "Choose «نسبة الصورة» (image ratio) and «موضع المؤشّر الابتدائي» (initial handle position), then save."
             ]
           },
           "settings": [
             {
               "label": "صورة «قبل» / صورة «بعد»",
               "note": {
-                "ar": "الصورتان المقارنتان."
+                "ar": "الصورتان المقارنتان.",
+                "en": "The two pictures being compared."
               }
             },
             {
               "label": "تسمية «قبل» / تسمية «بعد»",
               "note": {
-                "ar": "نص صغير على كل صورة."
+                "ar": "نص صغير على كل صورة.",
+                "en": "A small text on each picture."
               }
             },
             {
               "label": "موضع المؤشّر الابتدائي",
               "note": {
-                "ar": "من 10% إلى 90%."
+                "ar": "من 10% إلى 90%.",
+                "en": "From 10% to 90%."
               }
             },
             {
@@ -1373,7 +1584,8 @@
             }
           ],
           "tip": {
-            "ar": "صوّر الصورتين من الزاوية نفسها حتى تكون المقارنة واضحة."
+            "ar": "صوّر الصورتين من الزاوية نفسها حتى تكون المقارنة واضحة.",
+            "en": "Take both pictures from the same angle so the comparison is clear."
           },
           "markers": [
             {
