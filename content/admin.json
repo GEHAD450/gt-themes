@@ -1,3 +1,8 @@
 {
-  "lock": null
+  "lock": {
+    "iterations": 310000,
+    "salt": "NWkMupcS+p8sYFOyu8SMXA==",
+    "iv": "LtNvYxqw9orex+iG",
+    "data": "NigoMxg7PvO4EaAZ5okf7F1CaHW7yue1iaPacgeTXDJrxDjIFbpiRv0f24hOW544QtyWZyQmMiOorepAkxyHhzBRGRCToNu7NRCUAr6gJml/P0ToS1BcMVfU/1w/TFaWYlUOzgwNaY8pjRzaIw=="
+  }
 }
