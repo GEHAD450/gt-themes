@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-cairo: 'Cairo', system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-white/90 font-sans antialiased;
+  background-image:
+    radial-gradient(60rem 60rem at 80% -10%, rgba(124, 58, 237, 0.15), transparent),
+    radial-gradient(50rem 50rem at 0% 30%, rgba(6, 182, 212, 0.08), transparent);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.4);
+}
+
+/* Thin custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.4);
+  border-radius: 999px;
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .card {
+    @apply rounded-2xl border border-white/10 bg-bg-card backdrop-blur-sm;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #a78bfa 0%, #06b6d4 50%, #ec4899 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 5s ease infinite;
+    /* breathing room so Arabic descenders aren't clipped by the text-clip box */
+    padding-bottom: 0.08em;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition
+           focus:outline-none focus:ring-2 focus:ring-brand-400/60 disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-brand-500 to-brand-600 text-white shadow-lg shadow-brand-600/30
+           hover:from-brand-400 hover:to-brand-500;
+  }
+  .btn-ghost {
+    @apply border border-white/15 bg-white/5 text-white/90 hover:bg-white/10;
+  }
+  .btn-danger {
+    @apply border border-red-500/30 bg-red-500/10 text-red-300 hover:bg-red-500/20;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white
+           placeholder-white/30 outline-none transition focus:border-brand-400/60 focus:bg-white/10;
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-medium text-white/60;
+  }
+
+  .section-tag {
+    @apply inline-block rounded-full border border-brand-400/30 bg-brand-500/10 px-4 py-1.5
+           text-xs font-semibold tracking-wide text-brand-300;
+  }
+}
+
+/* ============ Custom cursor (desktop only) ============ */
+.cursor,
+.cursor-follow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  display: none;
+}
+.cursor {
+  width: 8px;
+  height: 8px;
+  background: #a78bfa;
+  transform: translate(-50%, -50%);
+}
+.cursor-follow {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  transform: translate(-50%, -50%);
+  transition: left 0.12s ease, top 0.12s ease, width 0.3s ease, height 0.3s ease, background 0.3s ease;
+}
+.cursor-follow.hover {
+  width: 56px;
+  height: 56px;
+  background: rgba(167, 139, 250, 0.1);
+}
+/* Enabled from JS only for real-mouse (pointer: fine) devices. */
+.cursor-active {
+  cursor: none;
+}
+.cursor-active * {
+  cursor: none;
+}
+.cursor-active .cursor,
+.cursor-active .cursor-follow {
+  display: block;
+}
+
+/* ============ Background grid ============ */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(167, 139, 250, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+/* ============ Reveal on scroll ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============ Hero entrance ============ */
+.anim-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slide-up 0.8s forwards;
+}
+
+/* ============ Code window ============ */
+.code-window {
+  direction: ltr;
+  text-align: left;
+  animation: float-window 6s ease-in-out infinite;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(167, 139, 250, 0.2);
+}
+.floating-tag {
+  animation: float-tag 4s ease-in-out infinite;
+}
+.c-keyword { color: #c084fc; }
+.c-var { color: #60a5fa; }
+.c-prop { color: #f472b6; }
+.c-string { color: #86efac; }
+.c-bool { color: #fb923c; }
+.cursor-blink {
+  display: inline-block;
+  color: #a78bfa;
+  animation: blink 1s steps(2) infinite;
+}
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, #fff, transparent);
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+/* ============ Active nav dot glow ============ */
+.nav-dot {
+  background: #a78bfa;
+  box-shadow: 0 0 8px 2px rgba(167, 139, 250, 0.9), 0 0 16px 5px rgba(167, 139, 250, 0.45);
+  animation: dot-pulse 1.6s ease-in-out infinite;
+}
+@keyframes dot-pulse {
+  0%, 100% {
+    box-shadow: 0 0 6px 2px rgba(167, 139, 250, 0.8), 0 0 12px 4px rgba(167, 139, 250, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 12px 4px rgba(167, 139, 250, 1), 0 0 22px 8px rgba(167, 139, 250, 0.55);
+  }
+}
+
+/* ============ Keyframes ============ */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+@keyframes slide-up {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float-window {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+@keyframes float-tag {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes blink {
+  to { opacity: 0; }
+}
+@keyframes scroll-pulse {
+  0%, 100% { transform: scaleY(1); opacity: 1; }
+  50% { transform: scaleY(0.5); opacity: 0.3; }
+}
+@keyframes blob-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -40px) scale(1.1); }
+  66% { transform: translate(-25px, 25px) scale(0.95); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-up, .reveal, .code-window, .floating-tag, .scroll-line, .gradient-text {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

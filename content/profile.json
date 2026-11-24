@@ -1,0 +1,124 @@
+{
+  "brand": "GT-THEMES",
+  "name": { "ar": "جهاد طه الرازقي", "en": "Gehad Taha Al-Razqi" },
+  "role": { "ar": "مطوّرة واجهات أمامية وثيمات متاجر", "en": "Front-end & store theme developer" },
+  "hero_title": { "ar": "ثيمات سلة وزد، بتصميم يبيع", "en": "Salla & Zid themes, designed to sell" },
+  "hero_subtitle": {
+    "ar": "GT-THEMES — ثيمات لمتاجر سلة وزد وتجهيز كامل للمتجر، مع شرح مصوّر لكل قسم ودعم مباشر على واتساب.",
+    "en": "GT-THEMES — themes for Salla and Zid stores and full store setup, with an illustrated guide for every section and direct support on WhatsApp."
+  },
+  "bio": {
+    "ar": "مطوّرة واجهات أمامية بخبرة **٧ سنوات**، منها **٤ سنوات** في تطوير وتجهيز متاجر سلة وزد.",
+    "en": "A front-end developer with **7 years** of experience, **4 of them** building and setting up Salla and Zid stores."
+  },
+  "bio_points": [
+    { "ar": "ثيمات سريعة، مصمّمة للجوال أولاً", "en": "Fast themes, designed mobile first" },
+    { "ar": "شرح مصوّر لكل ثيم، ليجهّزه التاجر بنفسه", "en": "An illustrated guide for each theme, so a merchant can set it up alone" },
+    { "ar": "دعم مباشر ممّن بنى الثيم نفسه", "en": "Direct support from the person who built the theme" }
+  ],
+  "services": [
+    {
+      "icon": "theme",
+      "title": { "ar": "تطوير ثيمات سلة وزد", "en": "Salla & Zid theme development" },
+      "text": {
+        "ar": "ثيمات جاهزة لمتاجر سلة وزد: سريعة، مصمّمة للجوال أولاً، وتدعم العربية والإنجليزية.",
+        "en": "Ready-made themes for Salla and Zid stores: fast, mobile first, in Arabic and English."
+      },
+      "points": [
+        { "ar": "أقسام تُرتَّب وتُعدَّل من لوحة التحكم", "en": "Sections arranged and edited from the dashboard" },
+        { "ar": "شرح مصوّر لكل قسم وإعداداته", "en": "An illustrated guide for every section and its options" },
+        { "ar": "دعم مباشر على واتساب", "en": "Direct support on WhatsApp" }
+      ],
+      "tags": [
+        { "ar": "سلة", "en": "Salla" },
+        { "ar": "زد", "en": "Zid" }
+      ]
+    },
+    {
+      "icon": "custom",
+      "title": { "ar": "إنشاء ثيمات خاصة", "en": "Custom themes" },
+      "text": {
+        "ar": "ثيم يُبنى لمتجرك وحده، على هوية علامتك وبالأقسام التي تحتاجها.",
+        "en": "A theme built for your store alone, on your brand's identity, with the sections you need."
+      },
+      "points": [
+        { "ar": "تصميم على ألوان العلامة وخطوطها", "en": "Designed on the brand's colours and type" },
+        { "ar": "أقسام تُبنى حسب طلبك", "en": "Sections built to your brief" },
+        { "ar": "لوحة إعدادات سهلة، وشرح عند التسليم", "en": "Simple settings, and a guide on delivery" }
+      ],
+      "tags": [
+        { "ar": "سلة", "en": "Salla" },
+        { "ar": "زد", "en": "Zid" }
+      ]
+    },
+    {
+      "icon": "launch",
+      "title": { "ar": "تجهيز المتاجر من الصفر حتى الانطلاق", "en": "Store setup, from zero to launch" },
+      "text": {
+        "ar": "نجهّز متجرك كاملاً، خطوة بخطوة، حتى يصبح جاهزاً لاستقبال أول طلب.",
+        "en": "Your store set up in full, step by step, until it is ready for its first order."
+      },
+      "points": [
+        { "ar": "إعداد التصنيفات والمنتجات والصور", "en": "Categories, products and pictures" },
+        { "ar": "تصميم واجهة المتجر وتنسيقها", "en": "The storefront designed and arranged" },
+        { "ar": "مراجعة كاملة قبل الانطلاق", "en": "A full review before launch" }
+      ],
+      "tags": [
+        { "ar": "سلة", "en": "Salla" },
+        { "ar": "زد", "en": "Zid" },
+        { "ar": "أمازون", "en": "Amazon" }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "icon": "guide",
+      "title": { "ar": "شرح لكل قسم", "en": "Every section explained" },
+      "text": { "ar": "صورة لكل قسم في الثيم، وتحتها ما يفعله وخطوات إعداده واحدة واحدة.", "en": "A picture of each section, what it does and how to set it up, step by step." }
+    },
+    {
+      "icon": "support",
+      "title": { "ar": "دعم مباشر على واتساب", "en": "Direct WhatsApp support" },
+      "text": { "ar": "سؤالك يصل إلى من بنى الثيم نفسه، لا إلى نظام تذاكر.", "en": "Your question reaches the person who built the theme, not a ticket queue." }
+    },
+    {
+      "icon": "mobile",
+      "title": { "ar": "الموبايل أولاً", "en": "Mobile first" },
+      "text": { "ar": "كل قسم يُصمَّم للجوال أولاً ثم يتّسع للشاشات الأكبر، ومجرَّب من ٣٢٠ بكسل.", "en": "Every section is designed for the phone first, then grows to wider screens — tested from 320px." }
+    },
+    {
+      "icon": "languages",
+      "title": { "ar": "عربي وإنجليزي", "en": "Arabic and English" },
+      "text": { "ar": "كل الثيمات تدعم اللغتين: العربية من اليمين لليسار، والإنجليزية من اليسار لليمين.", "en": "Every theme supports both languages: Arabic right-to-left and English left-to-right." }
+    },
+    {
+      "icon": "fast",
+      "title": { "ar": "سريع", "en": "Fast" },
+      "text": { "ar": "صور بأحجام مناسبة وتحميل عند الحاجة، ليفتح المتجر بسرعة.", "en": "Right-sized pictures and lazy loading, so the store opens quickly." }
+    },
+    {
+      "icon": "updates",
+      "title": { "ar": "تحديثات مستمرة", "en": "Kept up to date" },
+      "text": { "ar": "الثيمات تُحدَّث مع تحديثات المنصة، والشرح يتحدّث معها.", "en": "Themes follow the platforms’ updates, and so do their guides." }
+    }
+  ],
+  "hours": { "days": [6, 0, 1, 2, 3, 4], "from": 12, "to": 20, "timezone": "Africa/Cairo" },
+  "experience": [
+    { "ar": "mt-themes — تطوير ثيمات المتاجر", "en": "mt-themes — store theme development" },
+    { "ar": "شركة مركز الخوادم الرقمية", "en": "Digital Servers Center" },
+    { "ar": "من المساهمين في شركة لتس بوت", "en": "Contributor at Let's Bot" }
+  ],
+  "stats": [
+    { "value": 7, "label": { "ar": "سنوات في الواجهات الأمامية", "en": "Years in front-end" } },
+    { "value": 4, "label": { "ar": "سنوات مع سلة وزد", "en": "Years with Salla & Zid" } },
+    { "value": 4, "label": { "ar": "ثيمات جاهزة", "en": "Ready themes" } }
+  ],
+  "skills": ["Salla Twilight", "Zid Vitrin", "React", "TypeScript", "Jinja", "Tailwind CSS", "JavaScript"],
+  "email": "gehadtaha2222@gmail.com",
+  "phone": "+201279753739",
+  "whatsapp": "201279753739",
+  "whatsapp_message": {
+    "ar": "مرحباً، أحتاج مساعدة بخصوص أحد ثيمات GT-THEMES",
+    "en": "Hello, I need help with a GT-THEMES theme"
+  }
+}
