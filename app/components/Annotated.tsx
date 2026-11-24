@@ -60,12 +60,17 @@ export function Annotated({
   className?: string;
   width?: number;
   height?: number;
-  /** The picture's own size rules (the guide keeps the picture's place before it loads). */
+  /**
+   * The size of the picture's box, when it is known before the picture loads (the guide keeps
+   * the picture's place). It goes on the box around the picture — the arrows are placed
+   * against that box — and the picture fills it. A percentage width set on the picture
+   * itself would have nothing to measure against: the box takes its width from the picture.
+   */
   style?: React.CSSProperties;
   onPick?: (x: number, y: number) => void;
 }) {
   return (
-    <span className="relative inline-block max-w-full align-top">
+    <span className="relative inline-block max-w-full align-top" style={style}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
@@ -74,8 +79,8 @@ export function Annotated({
         height={height}
         loading="lazy"
         decoding="async"
-        className={className}
-        style={onPick ? { ...style, cursor: 'crosshair' } : style}
+        className={style ? 'block h-full w-full' : className}
+        style={onPick ? { cursor: 'crosshair' } : undefined}
         onClick={
           onPick
             ? (event) => {
