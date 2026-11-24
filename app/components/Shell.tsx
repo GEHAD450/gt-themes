@@ -89,6 +89,7 @@ export function Shell({ profile, children }: { profile: Profile; children: React
     { href: '/#services', label: isAr ? 'خدماتنا' : 'Services', on: false },
     { href: '/platform/salla/', label: isAr ? 'ثيمات سلة' : 'Salla themes', on: pathname.startsWith('/platform/salla') },
     { href: '/platform/zid/', label: isAr ? 'ثيمات زد' : 'Zid themes', on: pathname.startsWith('/platform/zid') },
+    { href: '/blog/', label: isAr ? 'المدونة' : 'Blog', on: pathname.startsWith('/blog') },
     { href: '/#contact', label: isAr ? 'تواصل' : 'Contact', on: false },
   ];
   const whatsapp = whatsappLink(profile.whatsapp, pick(profile.whatsapp_message, locale));
@@ -108,7 +109,7 @@ export function Shell({ profile, children }: { profile: Profile; children: React
             <Logo brand={profile.brand} collapses />
           </Link>
 
-          <div className="hidden items-center gap-6 md:flex lg:gap-7">
+          <div className="hidden items-center gap-5 md:flex lg:gap-7">
             {links
               .filter((link) => !link.phoneOnly)
               .map((link) => (

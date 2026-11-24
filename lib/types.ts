@@ -56,6 +56,8 @@ export interface Profile {
   /** Digits only, with the country code: the number WhatsApp opens. */
   whatsapp: string;
   whatsapp_message: Text;
+  /** The code Google Search Console gives to prove the site is the owner's (the `content` of its meta tag). */
+  google_verification?: string;
 }
 
 /** An arrow on a section's picture: where it points (percent of the picture) and what it says. */
@@ -95,6 +97,8 @@ export interface ThemeDemo {
   label: Text;
   /** The live preview's address; empty while it is not public. */
   url: string;
+  /** A few words shown instead of the preview button while there is no address ("applied from the theme settings"). */
+  note?: Text;
   image?: string;
   image_size?: [number, number];
 }
@@ -121,4 +125,23 @@ export interface StoreEntry {
   theme: string;
   note?: string;
   added: string;
+}
+
+/** A blog article: a file in `content/blog/`, written from the control panel. */
+export interface Post {
+  /** The article's name in its address: lowercase latin letters, digits and dashes. */
+  slug: string;
+  title: Text;
+  /** Two sentences: shown on the blog page and to search engines. */
+  summary: Text;
+  /** A wide picture (1200×630), also used when the article is shared. */
+  cover?: string;
+  cover_size?: [number, number];
+  /** The day it was published: YYYY-MM-DD. */
+  date: string;
+  tags?: string[];
+  /** The article itself, in the simple marks `Prose` understands (## heading, - list, **bold**, [link](address), ![picture](address)). */
+  body: Text;
+  /** A draft (false) stays out of the site. */
+  published: boolean;
 }

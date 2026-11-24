@@ -3,11 +3,12 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, Briefcase, Check, Mail, Phone, Store } from 'lucide-react';
-import type { ThemeCard } from '@/lib/content';
+import type { PostCard, ThemeCard } from '@/lib/content';
 import type { Platform, Profile } from '@/lib/types';
 import { hourText } from '@/lib/hours';
 import { iconOf } from '@/lib/icons';
 import { countOf, pick, PLATFORMS, THEMES, whatsappLink } from '@/lib/site';
+import { PostCardLink } from './BlogViews';
 import { useOpenNow, WorkingHours } from './Hours';
 import { Shell, useLocale, WhatsAppIcon } from './Shell';
 import { ThemeCardLink } from './ThemeCardLink';
@@ -77,15 +78,15 @@ function Rich({ text }: { text: string }) {
 }
 
 /** The home page: what GT-THEMES offers, the two platforms, the themes, who is behind it, how to get help. */
-export function HomeView({ profile, themes }: { profile: Profile; themes: ThemeCard[] }) {
+export function HomeView({ profile, themes, posts }: { profile: Profile; themes: ThemeCard[]; posts: PostCard[] }) {
   return (
     <Shell profile={profile}>
-      <HomeBody profile={profile} themes={themes} />
+      <HomeBody profile={profile} themes={themes} posts={posts} />
     </Shell>
   );
 }
 
-function HomeBody({ profile, themes }: { profile: Profile; themes: ThemeCard[] }) {
+function HomeBody({ profile, themes, posts }: { profile: Profile; themes: ThemeCard[]; posts: PostCard[] }) {
   const { locale } = useLocale();
   const isAr = locale === 'ar';
   const Arrow = isAr ? ArrowLeft : ArrowRight;
@@ -368,6 +369,24 @@ function HomeBody({ profile, themes }: { profile: Profile; themes: ThemeCard[] }
                 </div>
               );
             })}
+          </div>
+        </section>
+      )}
+
+      {/* the newest articles */}
+      {posts.length > 0 && (
+        <section id="blog" className="container-px scroll-mt-28 py-14">
+          <SectionHeader tag={isAr ? 'المدونة' : 'Blog'} title={isAr ? 'أحدث المقالات' : 'Latest articles'} sub={isAr ? 'شروح عملية لأصحاب متاجر سلة وزد.' : 'Practical notes for Salla and Zid store owners.'} />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {posts.map((post) => (
+              <PostCardLink key={post.slug} post={post} />
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/blog/" className="btn btn-ghost">
+              {isAr ? 'كل المقالات' : 'All articles'}
+              <Arrow className="h-4 w-4" />
+            </Link>
           </div>
         </section>
       )}

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import type { Platform, Profile, StoreEntry, Theme } from './types';
+import type { Platform, Post, Profile, StoreEntry, Theme } from './types';
 
 /**
  * The site's content, read from the `content/` folder when the site is built. Nothing is
@@ -79,4 +79,27 @@ export type ThemeCard = Omit<Theme, 'groups'> & { sections: number };
 export const toCard = (theme: Theme): ThemeCard => {
   const { groups, ...rest } = theme;
   return { ...rest, sections: groups.reduce((total, group) => total + group.sections.length, 0) };
+};
+
+/** The published articles of the blog, newest first. */
+export function getPosts(): Post[] {
+  const dir = path.join(CONTENT, 'blog');
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((name) => name.endsWith('.json'))
+    .map((name) => read<Post>(`blog/${name}`))
+    .filter((post) => post.published && post.slug && post.title?.ar)
+    .map((post) => ({ ...post, cover_size: sizeOf(post.cover) }))
+    .sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
+}
+
+export const getPost = (slug: string): Post | undefined => getPosts().find((post) => post.slug === slug);
+
+/** An article as the lists need it — without its text. */
+export type PostCard = Omit<Post, 'body'>;
+
+export const toPostCard = (post: Post): PostCard => {
+  const { body: _body, ...rest } = post;
+  return rest;
 };

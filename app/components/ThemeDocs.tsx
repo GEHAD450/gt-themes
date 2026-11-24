@@ -165,7 +165,7 @@ function Body({ profile, theme, stores }: { profile: Profile; theme: Theme; stor
                         {isAr ? 'معاينة حيّة' : 'Live preview'}
                       </a>
                     ) : (
-                      <span className="rounded-lg border border-dashed border-white/10 px-3 py-1.5 text-xs text-white/40">{isAr ? 'المعاينة قريباً' : 'Preview soon'}</span>
+                      <span className="rounded-lg border border-dashed border-white/10 px-3 py-1.5 text-xs text-white/45">{pick(look.note, locale) || (isAr ? 'المعاينة قريباً' : 'Preview soon')}</span>
                     )}
                   </div>
                 </li>

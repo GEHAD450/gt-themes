@@ -97,6 +97,18 @@ export function github(repo: string, branch: string) {
       return { value: JSON.parse(new TextDecoder().decode(fromBase64(entry.content))) as T, sha: entry.sha };
     },
 
+    /**
+     * A JSON file as anyone may read it, without a token. It comes from GitHub's file server,
+     * not from its API: the API answers a visitor it does not know only 60 times an hour for
+     * a whole network, and the panel must open every time. A copy read this way can be a few
+     * minutes behind the repository.
+     */
+    async peek<T>(file: string): Promise<T> {
+      const response = await fetch(`https://raw.githubusercontent.com/${repo}/${branch}/${file}?at=${Date.now()}`, { cache: 'no-store' });
+      if (!response.ok) throw new GitHubError(response.status, response.statusText);
+      return (await response.json()) as T;
+    },
+
     /** The names of the files in a folder of the repository. */
     async list(folder: string, token?: string): Promise<string[]> {
       const entries = (await call(`/contents/${folder}?ref=${encodeURIComponent(branch)}`, token)) as { name: string; type: string }[];
@@ -106,6 +118,11 @@ export function github(repo: string, branch: string) {
     /** Commits a picture (or any binary file) under a NEW name. */
     async upload(file: string, bytes: Uint8Array, message: string, token: string): Promise<void> {
       await call(`/contents/${file}`, token, { method: 'PUT', body: JSON.stringify({ message, content: toBase64(bytes), branch }) });
+    },
+
+    /** Deletes a file of the repository. */
+    async remove(file: string, sha: string, message: string, token: string): Promise<void> {
+      await call(`/contents/${file}`, token, { method: 'DELETE', body: JSON.stringify({ message, sha, branch }) });
     },
 
     /** Where a committed file can be seen at once, before the site is rebuilt. */

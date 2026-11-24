@@ -3,6 +3,12 @@ import type { Locale, Platform, Text } from './types';
 /** The folder the site is served from ("" on its own domain, "/gt-themes" on a project site). */
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
+/** The site's full address, without a trailing slash: what search engines and shared links are given. */
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://gehad450.github.io/gt-themes').replace(/\/+$/, '');
+
+/** A page or a file of the site as a full address ("/blog/" → "https://…/blog/"). */
+export const absolute = (path: string): string => `${SITE_URL}${path.startsWith('/') ? '' : '/'}${path}`;
+
 /** A file of the `public` folder (a picture named in the content files), with the base path. */
 export const asset = (file: string | undefined | null): string => {
   if (!file) return '';

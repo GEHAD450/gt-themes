@@ -17,10 +17,35 @@
   "demos": [
     {
       "label": {
-        "ar": "المتجر التجريبي",
-        "en": "Demo store"
+        "ar": "استايل ماركو — كريمي دافئ",
+        "en": "Marco style — warm cream"
       },
-      "url": "https://0nyzqw.zid.store"
+      "url": "https://0nyzqw.zid.store",
+      "image": "/docs/marco/look-marco.webp"
+    },
+    {
+      "label": {
+        "ar": "استايل فولت — أسود وليموني",
+        "en": "VAULT style — black and lime"
+      },
+      "url": "",
+      "note": {
+        "ar": "يُفعَّل باختيار واحد من إعدادات الثيم",
+        "en": "One pick in the theme settings"
+      },
+      "image": "/docs/marco/look-vault.webp"
+    },
+    {
+      "label": {
+        "ar": "استايل واحة — زمردي وذهبي",
+        "en": "OASIS style — emerald and gold"
+      },
+      "url": "",
+      "note": {
+        "ar": "يُفعَّل باختيار واحد من إعدادات الثيم",
+        "en": "One pick in the theme settings"
+      },
+      "image": "/docs/marco/look-oasis.webp"
     }
   ],
   "highlights": [

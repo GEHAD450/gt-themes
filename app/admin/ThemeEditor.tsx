@@ -21,7 +21,7 @@ const fail = (error: unknown) =>
  * A picture chosen from the device, made ready for the site in the browser: scaled down to
  * `maxWidth` and saved as WebP, so a 5 MB screenshot becomes ~100 KB.
  */
-async function shrink(file: File, maxWidth: number): Promise<Uint8Array> {
+export async function shrink(file: File, maxWidth: number): Promise<Uint8Array> {
   const bitmap = await createImageBitmap(file);
   const scale = Math.min(1, maxWidth / bitmap.width);
   const canvas = document.createElement('canvas');
@@ -241,6 +241,7 @@ function ThemeEditor({ hub, token, slug, onClose }: { hub: Hub; token: string; s
                 <Field label="الاسم (عربي)" value={demo.label.ar} onChange={(ar) => set({ ...demo, label: { ...demo.label, ar } })} />
                 <Field label="الاسم (إنجليزي)" ltr value={demo.label.en ?? ''} onChange={(en) => set({ ...demo, label: { ...demo.label, en } })} />
                 <Field label="رابط المعاينة الحيّة (اتركيه فارغاً إن لم يُنشر بعد)" ltr value={demo.url} onChange={(url) => set({ ...demo, url: url.trim() })} />
+                <Field label="ملاحظة تظهر مكان زر المعاينة إن لم يوجد رابط (اختياري)" value={demo.note?.ar ?? ''} onChange={(ar) => set({ ...demo, note: ar ? { ...demo.note, ar } : undefined })} />
                 <PictureField label="صورة هذا الشكل (عريضة)" src={show(demo.image)} onPick={async (chosen) => set({ ...demo, image: await upload(chosen, 'look', 1400) })} onClear={() => set({ ...demo, image: '' })} />
               </div>
             )}

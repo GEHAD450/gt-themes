@@ -1,10 +1,26 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { getProfile } from '@/lib/content';
+import { absolute, SITE_URL } from '@/lib/site';
 import { LocaleProvider } from './components/Shell';
 
+const description = 'GT-THEMES: تطوير ثيمات سلة وزد، إنشاء ثيمات خاصة، وتجهيز المتاجر من الصفر حتى الانطلاق — مع شرح مصوّر لكل ثيم ودعم مباشر على واتساب.';
+
 export const metadata: Metadata = {
-  title: { default: 'GT-THEMES — ثيمات سلة وزد وشروحها', template: '%s — GT-THEMES' },
-  description: 'ثيمات جاهزة لمتاجر سلة وزد مع شرح مصوّر لكل قسم وطريقة إعداده، ودعم مباشر على واتساب.',
+  metadataBase: new URL(`${SITE_URL}/`),
+  title: { default: 'GT-THEMES — ثيمات سلة وزد وتجهيز المتاجر', template: '%s — GT-THEMES' },
+  description,
+  openGraph: {
+    type: 'website',
+    siteName: 'GT-THEMES',
+    locale: 'ar_AR',
+    title: 'GT-THEMES — ثيمات سلة وزد وتجهيز المتاجر',
+    description,
+    images: [{ url: absolute('/brand/og.png'), width: 1200, height: 630 }],
+  },
+  twitter: { card: 'summary_large_image' },
+  // the owner's proof to Google Search Console that the site is hers (set from the control panel)
+  verification: { google: getProfile().google_verification || undefined },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

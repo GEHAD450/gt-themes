@@ -2,19 +2,20 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { BookOpen, ExternalLink, KeyRound, Loader2, LogOut, Pencil, Plus, Save, Store, Trash2, UserRound } from 'lucide-react';
+import { BookOpen, ExternalLink, KeyRound, Loader2, LogOut, Newspaper, Pencil, Plus, Save, Store, Trash2, UserRound } from 'lucide-react';
 import type { Feature, Profile, Service, StoreEntry, Text, WorkHours } from '@/lib/types';
 import { github, GitHubError, lockToken, unlockToken, type Lock } from '@/lib/admin';
 import { dayName, hourText, WEEK, ZONES } from '@/lib/hours';
 import { ICONS, iconOf } from '@/lib/icons';
+import { BlogTab } from './BlogEditor';
 import { Field, Lines, Rows, ThemesTab } from './ThemeEditor';
 
 interface AdminFile {
   lock: Lock | null;
 }
 
-type Stage = 'loading' | 'offline' | 'setup' | 'login' | 'ready';
-type Tab = 'themes' | 'stores' | 'profile' | 'password';
+type Stage = 'loading' | 'offline' | 'unreachable' | 'setup' | 'login' | 'ready';
+type Tab = 'themes' | 'blog' | 'stores' | 'profile' | 'password';
 
 const MIN_PASSWORD = 10;
 
@@ -39,33 +40,44 @@ export function AdminApp({ repo, branch, themes }: { repo: string; branch: strin
   const hub = useMemo(() => github(repo, branch), [repo, branch]);
   const [stage, setStage] = useState<Stage>('loading');
   const [lock, setLock] = useState<Lock | null>(null);
-  const [lockSha, setLockSha] = useState<string | undefined>();
   const [token, setToken] = useState('');
   const [tab, setTab] = useState<Tab>('themes');
   const [error, setError] = useState('');
+  /** Counts the tries to reach GitHub: "try again" reads the lock afresh. */
+  const [tries, setTries] = useState(0);
 
+  // Is there a password yet? Read without a token: from GitHub's file server first (it does not
+  // ration visitors), from its API if that fails. When neither answers, say so — never offer
+  // "first-time setup" on a guess, the panel may already have a password.
   useEffect(() => {
     if (!repo) {
       setStage('offline');
       return;
     }
+    let gone = false;
+    setStage('loading');
     hub
-      .read<AdminFile>('content/admin.json')
-      .then(({ value, sha }) => {
-        setLock(value.lock);
-        setLockSha(sha);
-        setStage(value.lock ? 'login' : 'setup');
+      .peek<AdminFile>('content/admin.json')
+      .catch(() => hub.read<AdminFile>('content/admin.json').then((file) => file.value))
+      .then(async (file) => {
+        // "no password yet" may be a copy a few minutes old: confirm with the API when it answers
+        const found = file.lock ?? (await hub.read<AdminFile>('content/admin.json').then((fresh) => fresh.value.lock).catch(() => null));
+        if (gone) return;
+        setLock(found);
+        setError('');
+        setStage(found ? 'login' : 'setup');
       })
-      .catch((reason) => {
-        setError(explain(reason));
-        setStage('setup');
-      });
-  }, [hub, repo]);
+      .catch(() => !gone && setStage('unreachable'));
+    return () => {
+      gone = true;
+    };
+  }, [hub, repo, tries]);
 
   const saveLock = async (next: Lock, withToken: string) => {
-    const sha = await hub.write('content/admin.json', { lock: next }, lockSha, 'Control panel: password', withToken);
+    // the file's current id is asked for with the token, so a stale copy never blocks the save
+    const current = await hub.read<AdminFile>('content/admin.json', withToken).catch(() => null);
+    await hub.write('content/admin.json', { lock: next }, current?.sha, 'Control panel: password', withToken);
     setLock(next);
-    setLockSha(sha);
   };
 
   return (
@@ -112,6 +124,16 @@ export function AdminApp({ repo, branch, themes }: { repo: string; branch: strin
         </div>
       )}
 
+      {stage === 'unreachable' && (
+        <div className="card mt-8 p-7 leading-relaxed text-white/70">
+          <h2 className="text-lg font-bold text-white">تعذّر الوصول إلى GitHub الآن</h2>
+          <p className="mt-2">اللوحة تقرأ بياناتها من GitHub ولم يصل الرد. تأكدي من الإنترنت ثم حاولي مرة أخرى — بياناتك وكلمة المرور كما هي.</p>
+          <button type="button" className="btn btn-primary mt-5" onClick={() => setTries((count) => count + 1)}>
+            حاولي مرة أخرى
+          </button>
+        </div>
+      )}
+
       {stage === 'setup' && (
         <Setup
           repo={repo}
@@ -129,7 +151,16 @@ export function AdminApp({ repo, branch, themes }: { repo: string; branch: strin
         <Login
           onReset={() => setStage('setup')}
           onLogin={async (password) => {
-            const opened = await unlockToken(lock, password);
+            let opened = await unlockToken(lock, password);
+            if (!opened) {
+              // the copy read when the page opened can lag a few minutes behind a password change:
+              // ask GitHub's API for the lock as it is now before calling the password wrong
+              const fresh = await hub.read<AdminFile>('content/admin.json').catch(() => null);
+              if (fresh?.value.lock) {
+                opened = await unlockToken(fresh.value.lock, password);
+                if (opened) setLock(fresh.value.lock);
+              }
+            }
             if (!opened) return 'كلمة المرور غير صحيحة.';
             try {
               if (!(await hub.canWrite(opened))) return 'المفتاح المحفوظ لم يعد يملك صلاحية الكتابة. أعيدي الإعداد بمفتاح جديد.';
@@ -150,6 +181,7 @@ export function AdminApp({ repo, branch, themes }: { repo: string; branch: strin
             {(
               [
                 ['themes', 'الثيمات والشروح', BookOpen],
+                ['blog', 'المدونة', Newspaper],
                 ['stores', 'متاجر فعّلت الثيمات', Store],
                 ['profile', 'الصفحة الرئيسية وبياناتي', UserRound],
                 ['password', 'كلمة المرور', KeyRound],
@@ -171,6 +203,7 @@ export function AdminApp({ repo, branch, themes }: { repo: string; branch: strin
           <p className="mt-4 text-xs text-white/40">كل حفظ يُسجَّل في GitHub، ويظهر على الموقع خلال دقيقتين تقريباً.</p>
 
           {tab === 'themes' && <ThemesTab hub={hub} token={token} />}
+          {tab === 'blog' && <BlogTab hub={hub} token={token} />}
           {tab === 'stores' && <StoresTab hub={hub} token={token} themes={themes} />}
           {tab === 'profile' && <ProfileTab hub={hub} token={token} />}
           {tab === 'password' && <PasswordTab onChange={async (password) => saveLock(await lockToken(token, password), token)} />}
@@ -531,6 +564,22 @@ function ProfileTab({ hub, token }: { hub: Hub; token: string }) {
         {text('البريد الإلكتروني', profile.email, (email) => setProfile({ ...profile, email }), { ltr: true })}
         {text('رقم الهاتف', profile.phone, (phone) => setProfile({ ...profile, phone }), { ltr: true })}
         {text('رقم واتساب (أرقام فقط مع كود الدولة)', profile.whatsapp, (whatsapp) => setProfile({ ...profile, whatsapp }), { ltr: true })}
+      </div>
+
+      <div>
+        <label className="label">رمز توثيق Google Search Console (اختياري — الصقي الرمز الذي يعطيه جوجل ليتأكد أن الموقع لك)</label>
+        <input
+          className="field font-mono"
+          dir="ltr"
+          placeholder="مثال: abcDEF123…"
+          value={profile.google_verification ?? ''}
+          onChange={(event) => {
+            // the whole <meta … content="…"> tag can be pasted: only the code is kept
+            const pasted = event.target.value.trim();
+            const code = /content=["']([^"']+)["']/.exec(pasted)?.[1] ?? pasted;
+            setProfile({ ...profile, google_verification: code });
+          }}
+        />
       </div>
 
       <h2 className="pt-2 font-bold text-white">التعريف</h2>
