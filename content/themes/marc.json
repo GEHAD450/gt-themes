@@ -20,21 +20,36 @@
         "ar": "ماركو — أزياء نسائية",
         "en": "Marco — women's fashion"
       },
-      "url": ""
+      "url": "",
+      "image": "/docs/marc/look-marco.webp",
+      "note": {
+        "ar": "المعاينة الحيّة بعد اعتماد الثيم في سلة",
+        "en": "Live preview once Salla approves the theme"
+      }
     },
     {
       "label": {
         "ar": "فولت — ستريت وير رجالي",
         "en": "Vault — men's streetwear"
       },
-      "url": ""
+      "url": "",
+      "image": "/docs/marc/look-vault.webp",
+      "note": {
+        "ar": "المعاينة الحيّة بعد اعتماد الثيم في سلة",
+        "en": "Live preview once Salla approves the theme"
+      }
     },
     {
       "label": {
         "ar": "واحة — عطور وبخور",
         "en": "Oasis — perfume and incense"
       },
-      "url": ""
+      "url": "",
+      "image": "/docs/marc/look-oasis.webp",
+      "note": {
+        "ar": "المعاينة الحيّة بعد اعتماد الثيم في سلة",
+        "en": "Live preview once Salla approves the theme"
+      }
     }
   ],
   "highlights": [
@@ -93,7 +108,7 @@
             "ar": "اختيار الاستايل",
             "en": "Choosing a look"
           },
-          "image": "",
+          "image": "/docs/marc/choose-look.webp",
           "text": {
             "ar": "مارك يأتي بثلاث هويات جاهزة، وإعداد واحد يبدّل الألوان والخطوط والأشكال في المتجر كله. ماركو بيج وبني دافئ بطابع المجلات، وفولت أسود مع أخضر ليموني، وواحة أخضر زمردي وذهبي مع أقواس مدبّبة. أي لون تضعه داخل قسم معيّن يبقى هو الأقوى.",
             "en": "Marc comes with three ready-made looks, and one setting changes colours, fonts and shapes across the whole store. Marco is warm beige and brown with a magazine feel, Vault is near-black with acid lime, and Oasis is emerald and gold with pointed arches. Any colour you set inside a particular block still wins."
@@ -497,7 +512,8 @@
                 "en": "Search"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/header-m.webp"
         },
         {
           "id": "mega-menu",
@@ -580,7 +596,8 @@
           "tip": {
             "ar": "أضف الاسم الشائع للمنتج في وصفه (مثلاً «عباية» و«عبايه») ليجده العميل مهما كتب.",
             "en": "Add the common spellings of a product's name to its description so shoppers find it however they type."
-          }
+          },
+          "image_mobile": "/docs/marc/search-m.webp"
         },
         {
           "id": "mobile-menu",
@@ -588,7 +605,7 @@
             "ar": "قائمة الجوال",
             "en": "Mobile menu"
           },
-          "image": "",
+          "image": "/docs/marc/mobile-menu-m.webp",
           "text": {
             "ar": "على الجوال تفتح أيقونة القائمة لوحة تعرض روابط قائمة الهيدر نفسها، ويفتح سهم كل تصنيف فروعه كبطاقات صور.",
             "en": "On phones the menu icon opens a panel with the same header menu links, and each category's arrow opens its children as picture cards."
@@ -624,7 +641,34 @@
           "tip": {
             "ar": "اختصر أسماء التصنيفات إلى كلمة أو كلمتين لتبقى واضحة في قائمة الجوال.",
             "en": "Keep category names to one or two words so they read well in the mobile menu."
-          }
+          },
+          "image_mobile": "/docs/marc/mobile-menu-m.webp",
+          "markers": [
+            {
+              "x": 88.3,
+              "y": 31.9,
+              "text": {
+                "ar": "رابط من قائمة الهيدر",
+                "en": "A link from the header menu"
+              }
+            },
+            {
+              "x": 8.1,
+              "y": 24.7,
+              "text": {
+                "ar": "سهم يفتح فروع التصنيف كبطاقات صور",
+                "en": "An arrow that opens a category's children as picture cards"
+              }
+            },
+            {
+              "x": 82.8,
+              "y": 86.8,
+              "text": {
+                "ar": "الحساب: تسجيل الدخول، وتحته اللغة",
+                "en": "Account sign-in, with the language below"
+              }
+            }
+          ]
         }
       ]
     },
@@ -757,7 +801,8 @@
                 "en": "The slide button — its text and link"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/hero-slideshow-m.webp"
         },
         {
           "id": "hero-cinema",
@@ -850,7 +895,8 @@
                 "en": "A frame from the slides"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/hero-cinema-m.webp"
         },
         {
           "id": "hero-accordion",
@@ -937,7 +983,8 @@
                 "en": "The block heading"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/hero-accordion-m.webp"
         },
         {
           "id": "marquee",
@@ -1029,7 +1076,8 @@
                 "en": "The separator between items"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/marquee-m.webp"
         },
         {
           "id": "category-spotlight",
@@ -1130,7 +1178,8 @@
                 "en": "The category number"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/category-spotlight-m.webp"
         },
         {
           "id": "shop-products",
@@ -1230,7 +1279,8 @@
                 "en": "A product card from the chosen source"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/shop-products-m.webp"
         },
         {
           "id": "products-tabs",
@@ -1338,7 +1388,8 @@
                 "en": "The discount badge on a card"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/products-tabs-m.webp"
         },
         {
           "id": "media-banner",
@@ -1454,7 +1505,8 @@
                 "en": "The secondary link"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/media-banner-m.webp"
         },
         {
           "id": "complete-the-outfit",
@@ -1555,7 +1607,8 @@
                 "en": "The 'add the whole look' button"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/complete-the-outfit-m.webp"
         },
         {
           "id": "outfit-builder",
@@ -1649,7 +1702,8 @@
                 "en": "The add button — its text"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/outfit-builder-m.webp"
         },
         {
           "id": "countdown-banner",
@@ -1757,7 +1811,8 @@
                 "en": "The picture — split-card layout"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/countdown-banner-m.webp"
         },
         {
           "id": "lookbook",
@@ -1858,7 +1913,8 @@
                 "en": "A wide tile"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/lookbook-m.webp"
         },
         {
           "id": "youtube",
@@ -1951,7 +2007,8 @@
                 "en": "The caption under the video"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/youtube-m.webp"
         },
         {
           "id": "features-bento",
@@ -2052,7 +2109,8 @@
                 "en": "An icon + text tile"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/features-bento-m.webp"
         },
         {
           "id": "fit-finder",
@@ -2146,7 +2204,8 @@
                 "en": "The side picture"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/fit-finder-m.webp"
         },
         {
           "id": "testimonials",
@@ -2247,7 +2306,8 @@
                 "en": "The slider arrows"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/testimonials-m.webp"
         },
         {
           "id": "brands",
@@ -2340,7 +2400,8 @@
                 "en": "The block's main heading"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/brands-m.webp"
         },
         {
           "id": "faq",
@@ -2441,7 +2502,8 @@
                 "en": "The side-column picture"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/faq-m.webp"
         },
         {
           "id": "blog-posts",
@@ -2812,7 +2874,8 @@
                 "en": "The cart button in the product-page accent"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/product-page-m.webp"
         },
         {
           "id": "colour-pictures",
@@ -2820,7 +2883,7 @@
             "ar": "صور لكل لون",
             "en": "Pictures for each colour"
           },
-          "image": "",
+          "image": "/docs/marc/colour-pictures.webp",
           "text": {
             "ar": "عندما يختار العميل لوناً في صفحة المنتج أو العرض السريع، تنتقل الصور إلى صور ذلك اللون. يكفي أن يحتوي النص البديل (Alt) لكل صورة على اسم اللون.",
             "en": "When a shopper picks a colour on the product page or in quick view, the gallery moves to that colour's pictures. Each picture's alt text only needs to contain the colour's name."
@@ -2849,7 +2912,25 @@
           "tip": {
             "ar": "اكتب اسم اللون بالإملاء نفسه في الخيار وفي النص البديل، وإلا لن يتعرف الثيم على الصورة.",
             "en": "Spell the colour the same way in the option and in the alt text, or the theme won't match the picture."
-          }
+          },
+          "markers": [
+            {
+              "x": 31.4,
+              "y": 30.3,
+              "text": {
+                "ar": "اللون المختار — اسمه في خيار اللون",
+                "en": "The chosen colour — its name in the colour option"
+              }
+            },
+            {
+              "x": 73.1,
+              "y": 42.5,
+              "text": {
+                "ar": "الصور تنتقل لصور هذا اللون",
+                "en": "The gallery moves to that colour's pictures"
+              }
+            }
+          ]
         },
         {
           "id": "size-guide",
@@ -3060,7 +3141,8 @@
           "tip": {
             "ar": "اكتب أسماء الألوان في النص البديل لصورها؛ يبدّل العرض السريع الصور مع اللون كما تفعل صفحة المنتج.",
             "en": "Write colour names in their pictures' alt text; quick view switches pictures with the colour just like the product page."
-          }
+          },
+          "image_mobile": "/docs/marc/quick-view-m.webp"
         },
         {
           "id": "category-page",
@@ -3139,7 +3221,8 @@
                 "en": "Product cards — desktop columns"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/category-page-m.webp"
         },
         {
           "id": "page-band",
@@ -3241,7 +3324,8 @@
                 "en": "A notice shown when a product is added to the cart."
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/cart-m.webp"
         }
       ]
     },
@@ -3381,7 +3465,8 @@
                 "en": "Social links"
               }
             }
-          ]
+          ],
+          "image_mobile": "/docs/marc/footer-m.webp"
         },
         {
           "id": "floating-buttons",
