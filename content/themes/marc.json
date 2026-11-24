@@ -2823,7 +2823,7 @@
             "ar": "دليل المقاسات",
             "en": "Size guide"
           },
-          "image": "",
+          "image": "/docs/marc/size-guide.webp",
           "text": {
             "ar": "رابط «دليل المقاسات» في صفحة المنتج والعرض السريع يفتح جدول المقاسات. المنتج الذي له دليل مقاسات خاص في سلة يفتح دليله، وباقي المنتجات تفتح الجدول العام.",
             "en": "A «Size guide» link on the product page and in quick view opens the size table. A product with its own size guide in Salla opens that guide; all others open your general table."
@@ -2964,7 +2964,7 @@
             "ar": "العرض السريع",
             "en": "Quick view"
           },
-          "image": "",
+          "image": "/docs/marc/quick-view.webp",
           "text": {
             "ar": "نافذة تُفتح من أيقونة العين في بطاقة المنتج أو من زر اختيار الخيارات، وتعرض الصور والخيارات والسعر وزر السلة كما في صفحة المنتج، دون مغادرة الصفحة.",
             "en": "A window that opens from the eye icon on a product card, or from the choose-options button, showing pictures, options, price and the cart button just as the product page does, without leaving the page."
@@ -3121,7 +3121,7 @@
             "ar": "السلة",
             "en": "Cart"
           },
-          "image": "",
+          "image": "/docs/marc/cart.webp",
           "text": {
             "ar": "صفحة السلة تعرض المنتجات المختارة وكمياتها والإجمالي وزر إتمام الطلب، بألوان الاستايل المختار. عدّاد السلة في الهيدر يتلوّن بإعداداته الخاصة.",
             "en": "The cart page lists the chosen products, their quantities, the total and the checkout button, in the chosen look's colours. The cart counter in the header has its own colours."
