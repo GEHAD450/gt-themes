@@ -51,6 +51,7 @@ export function Annotated({
   className,
   width,
   height,
+  style,
   onPick,
 }: {
   src: string;
@@ -59,6 +60,8 @@ export function Annotated({
   className?: string;
   width?: number;
   height?: number;
+  /** The picture's own size rules (the guide keeps the picture's place before it loads). */
+  style?: React.CSSProperties;
   onPick?: (x: number, y: number) => void;
 }) {
   return (
@@ -72,7 +75,7 @@ export function Annotated({
         loading="lazy"
         decoding="async"
         className={className}
-        style={onPick ? { cursor: 'crosshair' } : undefined}
+        style={onPick ? { ...style, cursor: 'crosshair' } : style}
         onClick={
           onPick
             ? (event) => {

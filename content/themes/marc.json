@@ -2705,7 +2705,7 @@
             "ar": "صفحة المنتج",
             "en": "Product page"
           },
-          "image": "",
+          "image": "/docs/marc/product-page.webp",
           "text": {
             "ar": "صفحة المنتج تعرض الصور والسعر والخيارات وزر السلة، مع صف مزايا تحت الزر، ودليل مقاسات، وشريط شراء ثابت أثناء التمرير، ومنتجات ذات صلة.",
             "en": "The product page shows the pictures, price, options and cart button, with a benefits row under the button, a size guide, a sticky buy bar while scrolling, and related products."
@@ -2778,7 +2778,41 @@
           "tip": {
             "ar": "اجعل صور كل المنتجات بالشكل نفسه (طولية 3:4 أو 4:5، مثل 720 × 900) لتتساوى البطاقات والمعرض.",
             "en": "Give every product the same picture shape (portrait 3:4 or 4:5, such as 720 × 900) so cards and galleries line up."
-          }
+          },
+          "markers": [
+            {
+              "x": 73.1,
+              "y": 42.5,
+              "text": {
+                "ar": "معرض الصور — «تكبير الصورة عند التحويم»",
+                "en": "The gallery — hover zoom"
+              }
+            },
+            {
+              "x": 35.9,
+              "y": 30.3,
+              "text": {
+                "ar": "دوائر الألوان — صور كل لون من النص البديل",
+                "en": "Colour swatches — each colour's pictures via alt text"
+              }
+            },
+            {
+              "x": 38.0,
+              "y": 54.2,
+              "text": {
+                "ar": "رابط «دليل المقاسات»",
+                "en": "The size-guide link"
+              }
+            },
+            {
+              "x": 23.0,
+              "y": 61.8,
+              "text": {
+                "ar": "زر السلة بـ«لون التمييز في صفحة المنتج»",
+                "en": "The cart button in the product-page accent"
+              }
+            }
+          ]
         },
         {
           "id": "colour-pictures",
@@ -2956,7 +2990,33 @@
           "tip": {
             "ar": "على الجوال يرى العميل الألوان في العرض السريع وصفحة المنتج.",
             "en": "On phones, shoppers see the colours in quick view and on the product page."
-          }
+          },
+          "markers": [
+            {
+              "x": 78.3,
+              "y": 16.8,
+              "text": {
+                "ar": "العرض السريع (أيقونة العين)",
+                "en": "Quick view (the eye icon)"
+              }
+            },
+            {
+              "x": 88.0,
+              "y": 91.6,
+              "text": {
+                "ar": "السعر قبل الخصم وبعده",
+                "en": "Price before and after discount"
+              }
+            },
+            {
+              "x": 88.0,
+              "y": 71.1,
+              "text": {
+                "ar": "زر اختيار الخيارات أو الإضافة للسلة",
+                "en": "Choose options / add to cart button"
+              }
+            }
+          ]
         },
         {
           "id": "quick-view",
@@ -3053,7 +3113,33 @@
           "tip": {
             "ar": "اجعل صور التصنيفات أفقية (مثل 1440 × 900) والموضوع في وسطها، لأن البطاقات الصغيرة تقتص الأطراف. التصنيف الفرعي بلا صورة يظهر بالحرف الأول من اسمه.",
             "en": "Make category pictures landscape (such as 1440 × 900) with the subject in the centre, since the small tiles crop the edges. A child category without a picture shows the first letter of its name."
-          }
+          },
+          "markers": [
+            {
+              "x": 50.0,
+              "y": 18.2,
+              "text": {
+                "ar": "بانر التصنيف — صورة التصنيف واسمه",
+                "en": "The category banner — its picture and name"
+              }
+            },
+            {
+              "x": 50.0,
+              "y": 47.5,
+              "text": {
+                "ar": "بطاقة تصنيف فرعي بصورته",
+                "en": "A child-category tile with its picture"
+              }
+            },
+            {
+              "x": 61.5,
+              "y": 89.1,
+              "text": {
+                "ar": "بطاقات المنتجات — «عدد الأعمدة على الكمبيوتر»",
+                "en": "Product cards — desktop columns"
+              }
+            }
+          ]
         },
         {
           "id": "page-band",
@@ -3172,7 +3258,7 @@
             "ar": "الفوتر",
             "en": "Footer"
           },
-          "image": "",
+          "image": "/docs/marc/footer.webp",
           "text": {
             "ar": "الفوتر يجمع كتلة العلامة والنشرة البريدية وأعمدة الروابط ومعلومات الاتصال وأيقونات الدفع، مع صورة جانبية أو فيديو اختياري.",
             "en": "The footer brings together the brand block, the newsletter, link columns, contact details and payment icons, with an optional side picture or film."
@@ -3261,7 +3347,41 @@
           "tip": {
             "ar": "ألوان الفوتر مستقلة عن الاستايل: «لون الخلفية» و«لون النص» و«لون العناوين» و«لون الخط الفاصل» في مجموعة «نمط الفوتر (الألوان)».",
             "en": "Footer colours are separate from the look: background, text, headings and divider colours sit in the footer colour group."
-          }
+          },
+          "markers": [
+            {
+              "x": 75.0,
+              "y": 40.0,
+              "text": {
+                "ar": "«صورة جانبية للفوتر (اختياري)» أو الفيديو",
+                "en": "The footer side picture or film"
+              }
+            },
+            {
+              "x": 25.0,
+              "y": 12.4,
+              "text": {
+                "ar": "النشرة البريدية — «نص النشرة»",
+                "en": "The newsletter — its text"
+              }
+            },
+            {
+              "x": 30.8,
+              "y": 53.5,
+              "text": {
+                "ar": "أعمدة الروابط — «عنوان العمود 1»",
+                "en": "The link columns"
+              }
+            },
+            {
+              "x": 25.0,
+              "y": 38.5,
+              "text": {
+                "ar": "روابط التواصل الاجتماعي",
+                "en": "Social links"
+              }
+            }
+          ]
         },
         {
           "id": "floating-buttons",

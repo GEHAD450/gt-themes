@@ -363,6 +363,10 @@ function SectionCard({ section, onZoom }: { section: DocSection; onZoom: (pictur
   // the arrows belong to the desktop picture
   const markers = !showsPhone ? (section.markers ?? []) : [];
   const [width, height] = (showsPhone ? section.image_mobile_size : section.image_size) ?? [];
+  // The picture's place is kept before it loads: as wide as the card allows, never taller than
+  // the limit (in rem), always in the picture's own proportions.
+  const limit = markers.length > 0 ? 40 : 34;
+  const room = width && height ? { aspectRatio: `${width} / ${height}`, width: `min(100%, ${((limit * width) / height).toFixed(2)}rem)` } : undefined;
 
   return (
     <article id={section.id} data-doc-section className="card scroll-mt-28 overflow-hidden">
@@ -405,7 +409,7 @@ function SectionCard({ section, onZoom }: { section: DocSection; onZoom: (pictur
           aria-label={isAr ? `تكبير صورة ${title}` : `Enlarge the picture of ${title}`}
         >
           {markers.length > 0 ? (
-            <Annotated src={asset(picture)} alt={title} markers={markers} width={width} height={height} className="block h-auto max-h-[40rem] w-auto max-w-full" />
+            <Annotated src={asset(picture)} alt={title} markers={markers} width={width} height={height} style={room} className={room ? 'block h-auto max-w-full' : 'block h-auto max-h-[40rem] w-auto max-w-full'} />
           ) : (
             // eslint-disable-next-line @next/next/no-img-element
             <img
@@ -415,7 +419,8 @@ function SectionCard({ section, onZoom }: { section: DocSection; onZoom: (pictur
               height={height}
               loading="lazy"
               decoding="async"
-              className={`mx-auto block h-auto max-w-full ${showsPhone ? 'max-h-[34rem] w-auto py-4' : 'max-h-[34rem] w-auto'}`}
+              style={room}
+              className={`mx-auto block h-auto max-w-full ${room ? '' : 'max-h-[34rem] w-auto'} ${showsPhone ? 'my-4' : ''}`}
             />
           )}
         </button>
