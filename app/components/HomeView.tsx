@@ -11,7 +11,7 @@ import { countOf, pick, PLATFORMS, THEMES, whatsappLink } from '@/lib/site';
 import { PostCardLink } from './BlogViews';
 import { useOpenNow, WorkingHours } from './Hours';
 import { Shell, useEnglishTitle, useLocale, WhatsAppIcon } from './Shell';
-import { ThemeCardLink } from './ThemeCardLink';
+import { ThemesSlider } from './ThemesSlider';
 
 function Counter({ target, label }: { target: number; label: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -94,6 +94,8 @@ function HomeBody({ profile, themes, posts }: { profile: Profile; themes: ThemeC
   const whatsapp = whatsappLink(profile.whatsapp, pick(profile.whatsapp_message, locale));
   const count = (platform: Platform) => themes.filter((theme) => theme.platform === platform).length;
   const services = profile.services ?? [];
+  // the number of ready themes as she states it in her numbers (some themes have no guide page yet)
+  const readyThemes = profile.stats.find((stat) => stat.label.en === 'Ready themes')?.value ?? themes.length;
   const features = profile.features ?? [];
   const points = profile.bio_points ?? [];
   const open = useOpenNow(profile.hours);
@@ -186,7 +188,7 @@ function HomeBody({ profile, themes, posts }: { profile: Profile; themes: ThemeC
                 {'\n'}  <span className="c-prop">frontEnd</span>: <span className="c-string">&apos;7 years&apos;</span>,
                 {'\n'}  <span className="c-prop">platforms</span>: [<span className="c-string">&apos;Salla&apos;</span>, <span className="c-string">&apos;Zid&apos;</span>],
                 {'\n'}  <span className="c-prop">services</span>: <span className="c-bool">{services.length}</span>,
-                {'\n'}  <span className="c-prop">themes</span>: <span className="c-bool">{themes.length}</span>,
+                {'\n'}  <span className="c-prop">themes</span>: <span className="c-bool">{readyThemes}</span>,
                 {'\n'}  <span className="c-prop">support</span>: <span className="c-string">&apos;WhatsApp&apos;</span>
                 <span className="cursor-blink">|</span>
                 {'\n'}{'}'};
@@ -210,10 +212,10 @@ function HomeBody({ profile, themes, posts }: { profile: Profile; themes: ThemeC
         <section id="services" className="container-px scroll-mt-28 py-14">
           <SectionHeader
             tag={isAr ? 'خدماتنا' : 'Our services'}
-            title={isAr ? 'ثلاث خدمات، ومتجر جاهز للبيع' : 'Three services, one store ready to sell'}
+            title={isAr ? 'أربع خدمات، ومتجر جاهز للبيع' : 'Four services, one store ready to sell'}
             sub={isAr ? 'اختر ما يحتاجه متجرك، وراسلنا على واتساب لنبدأ.' : 'Pick what your store needs and message us on WhatsApp to start.'}
           />
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {services.map((service, index) => {
               const Icon = iconOf(service.icon);
               const title = pick(service.title, locale);
@@ -299,11 +301,7 @@ function HomeBody({ profile, themes, posts }: { profile: Profile; themes: ThemeC
       {themes.length > 0 && (
         <section id="themes" className="container-px scroll-mt-28 py-14">
           <SectionHeader tag={isAr ? 'الثيمات' : 'Themes'} title={isAr ? 'كل الثيمات وشروحها' : 'All themes and their guides'} />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {themes.map((theme) => (
-              <ThemeCardLink key={theme.slug} theme={theme} />
-            ))}
-          </div>
+          <ThemesSlider themes={themes} isAr={isAr} />
         </section>
       )}
 

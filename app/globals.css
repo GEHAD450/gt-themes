@@ -241,3 +241,15 @@ body {
     transform: none !important;
   }
 }
+
+/* the home page's themes slider: swiped or dragged, so its scrollbar stays hidden */
+.themes-track {
+  scrollbar-width: none;
+  cursor: grab;
+}
+.themes-track::-webkit-scrollbar {
+  display: none;
+}
+.themes-track:active {
+  cursor: grabbing;
+}

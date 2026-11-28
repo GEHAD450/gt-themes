@@ -88,7 +88,7 @@ const sized = (theme: Theme): Theme => ({
 });
 
 /** The order themes are listed in; a theme file not named here comes after, by name. */
-const ORDER = ['marc', 'abaq', 'fuse', 'marco'];
+const ORDER = ['marc', 'fuse-salla', 'abaq', 'fuse', 'marco'];
 
 export function getThemes(): Theme[] {
   const dir = path.join(CONTENT, 'themes');
